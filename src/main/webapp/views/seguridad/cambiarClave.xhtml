@@ -1,0 +1,43 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" template="/WEB-INF/template.xhtml">
+
+	<ui:define name="title">Cambiar Contraseña</ui:define>
+
+	<ui:define name="content">
+		<h:form id="form">
+			<p:panel id="panel" header="Cambiar Contraseña">
+				<p:outputLabel for="contraseñaActual" value="Contraseña Actual"
+					styleClass="DispBlock" />
+				<p:password id="contraseñaActual"
+					value="#{cambiarClaveBean.claveActual}" label="Contraseña Actual"
+					styleClass="DispBlock Wid90">
+				</p:password>
+
+				<p:outputLabel for="contraseñaNueva" value="Contraseña Nueva"
+					styleClass="DispBlock" />
+				<p:password id="contraseñaNueva"
+					value="#{cambiarClaveBean.claveNueva1}" label="Contraseña Nueva"
+					feedback="true" inline="true" promptLabel="Nivel Bajo"
+					weakLabel="Nivel Medio" goodLabel="Nivel Alto" strongLabel="Óptimo"
+					styleClass="DispBlock Wid90">
+				</p:password>
+
+				<p:outputLabel for="repitaContraseña" value="Repita Contraseña"
+					styleClass="DispBlock" />
+				<p:password id="repitaContraseña"
+					value="#{cambiarClaveBean.claveNueva2}" label="Repita Contraseña"
+					feedback="true" inline="true" promptLabel="Nivel Bajo"
+					weakLabel="Nivel Medio" goodLabel="Nivel Alto" strongLabel="Óptimo"
+					styleClass="DispBlock Wid90">
+				</p:password>
+				<p:separator />
+				<p:commandButton value="Actualizar" update=":mensaje" id="ajax"
+					icon="#{msg['i.guardar']}"
+					action="#{cambiarClaveBean.cambiarClave}" styleClass="GreenButton" />
+			</p:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>

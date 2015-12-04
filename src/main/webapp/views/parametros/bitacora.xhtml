@@ -1,0 +1,93 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" template="/WEB-INF/template.xhtml">
+
+	<ui:define name="title">Bitacora</ui:define>
+
+	<ui:define name="content">
+		<p:growl id="mensajes" showDetail="true" life="7000" />
+		<p:panel id="panel" header="Bitacora">
+			<h:form id="formDataTable">
+				<p:focus context="formDataTable" />
+				<h:panelGrid columns="3" cellpadding="1">
+					<p:outputLabel value="Usuario" styleClass="negrita" />
+					<p:inputText readonly="true"
+						value="#{bitacoraBean.persona.cedula} - #{bitacoraBean.persona.apellido} #{bitacoraBean.persona.nombre}"
+						styleClass="w445px" />
+					<p:commandButton oncomplete="PF('buscarUsuario').show()"
+						icon="#{msg['i.buscar']}" />
+					<h:outputText value="Día" styleClass="negrita" />
+					<p:calendar value="#{bitacoraBean.fechaInicio}" navigator="true"
+						styleClass="calendarBitacora" />
+					<p:commandButton update=":formDataTable, :mensajes"
+						id="btnNuevoAceptar" icon="#{msg['i.buscar']}"
+						actionListener="#{bitacoraBean.consultar}" />
+				</h:panelGrid>
+				<p:dataTable id="tablaBitacora" var="bitacora"
+					value="#{bitacoraBean.listaBitacora}" reflow="true"
+					emptyMessage="#{msg['lbl.mensajeTabla']}">
+					<p:column headerText="Usuario" styleClass="centrar">  
+            			#{bitacora.persona.apellido} #{bitacora.persona.nombre} 
+        			</p:column>
+					<p:column headerText="Fecha" styleClass="centrar">
+						<h:outputText value="#{bitacora.fecha}">
+							<f:convertDateTime pattern="dd/MM/yyyy HH:mm:ss"
+								timeZone="America/Guayaquil" />
+						</h:outputText>
+					</p:column>
+					<p:column headerText="Acción" styleClass="centrar">  
+            			#{bitacora.metodo}  
+        			</p:column>
+				</p:dataTable>
+			</h:form>
+			<p:dialog header="Usuario" widgetVar="buscarUsuario"
+				resizable="false" modal="false" showEffect="clip" hideEffect="fold"
+				id="dialogoUsuario" width="500px">
+				<h:form id="formBuscarUsuario">
+					<p:outputLabel value="Cedula/Nombre/Apellido:" styleClass="negrita" />
+					<p:inputText id="comboCedula" value="#{bitacoraBean.criterio}"
+						styleClass="w90 margin5px"
+						onblur="this.value=this.value.toUpperCase();" required="true" />
+					<p:commandButton update="comboCedula,tablaUsuarios,:mensajes"
+						icon="#{msg['i.buscar']}"
+						actionListener="#{bitacoraBean.buscarUsuario}" />
+					<p:dataTable id="tablaUsuarios" var="persona" reflow="true"
+						value="#{bitacoraBean.listaPersonas}" paginator="true" rows="5"
+						emptyMessage="#{msg['lbl.mensajeTabla']}"
+						paginatorPosition="bottom" rowKey="#{persona.id}"
+						selection="#{bitacoraBean.persona}" selectionMode="single">
+						<p:ajax event="rowSelect" update=":formDataTable"
+							listener="#{bitacoraBean.cargarUsuario}"
+							oncomplete="PF('buscarUsuario').hide()" />
+						<p:column headerText="Cedula"
+							styleClass="text-align:center;width: 100px;">
+							 	#{persona.cedula}
+						</p:column>
+						<p:column headerText="Nombres" styleClass="centrar w350px">
+							 	#{persona.apellido} #{persona.nombre}
+						</p:column>
+					</p:dataTable>
+				</h:form>
+			</p:dialog>
+		</p:panel>
+		<script type="text/javascript">
+			function handleSubmitRequest(args) {
+				if (!args.validationFailed) {
+					menuDialogoNuevo.hide();
+					menuDialogoEditar.hide();
+				}
+			}
+
+			//<![CDATA[
+			function comprobar(xhr, status, args) {
+				if (!args.validationFailed && args.error) {
+					menuDialogoNuevo.hide();
+					menuDialogoEditar.hide();
+				}
+			}
+			//]]>
+		</script>
+	</ui:define>
+</ui:composition>

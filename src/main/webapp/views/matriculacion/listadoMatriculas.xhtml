@@ -1,0 +1,119 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" template="/WEB-INF/template.xhtml">
+	<ui:define name="title">Matricula</ui:define>
+	<ui:define name="content">
+		<p:panel id="panelPrincipal" header="Listado de Matriculas">
+			<h:form id="formDataTable">
+				<p:dataTable id="tablaMatriculas" var="matricula" scrollable="true"
+					reflow="true" value="#{matriculaBean.listaMatriculas}"
+					paginator="true" rows="10"
+					paginatorTemplate="{RowsPerPageDropdown} {FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+					paginatorPosition="bottom"
+					rowStyleClass="#{matricula.activo eq true ? null:'desactivo'}"
+					emptyMessage="#{msg['lbl.mensajeTabla']}">
+					<f:facet name="header">
+						<p:tooltip for="btnNuevo" value="#{msg['lbl.insertar']}" />
+						<p:commandButton update=":formNuevo"
+							oncomplete="mostarPanelInsertar('')"
+							action="#{matriculaBean.cargarInsertar}" id="btnNuevo"
+							icon="#{msg['i.nuevo']}" />
+					</f:facet>
+					<p:column headerText="#{msg['lbl.gestionar']}">
+						<p:tooltip for="btnImprimir" value="Imprimir" />
+						<p:commandButton id="btnImprimir" update=":mensaje" ajax="false"
+							action="#{matriculaBean.imprimir}" icon="#{msg['i.editar']}">
+							<f:setPropertyActionListener value="#{matricula}"
+								target="#{matriculaBean.matricula}" />
+						</p:commandButton>
+					</p:column>
+
+					<p:column headerText="Matricula #"
+						filterBy="#{matricula.matricula}" filterMatchMode="contains">
+						<p:outputLabel value="#{matricula.matricula}" />
+					</p:column>
+					<p:column headerText="Periodo">
+						<p:outputLabel value="#{matricula.periodo.nombre}" />
+					</p:column>
+					<p:column headerText="Cedula"
+						filterBy="#{matricula.estudiante.persona.cedula}"
+						filterMatchMode="contains">
+						<p:outputLabel value="#{matricula.estudiante.persona.cedula}" />
+					</p:column>
+					<p:column headerText="Nombre"
+						filterBy="#{matricula.estudiante.persona.apellido} #{matricula.estudiante.persona.nombre}}"
+						filterMatchMode="contains">
+						<p:outputLabel
+							value="#{matricula.estudiante.persona.apellido} #{matricula.estudiante.persona.nombre}" />
+					</p:column>
+					<p:column headerText="Grado">
+						<p:outputLabel value="#{matricula.grado.nombre}" />
+					</p:column>
+					<p:column headerText="Fecha">
+						<p:outputLabel value="#{matricula.fecha}">
+							<f:convertDateTime dateStyle="full" locale="es_EC"
+								pattern="EEEE, d MMMM yyyy HH:mm:ss" timeStyle="long"
+								type="both" timeZone="America/Guayaquil" />
+						</p:outputLabel>
+					</p:column>
+				</p:dataTable>
+			</h:form>
+		</p:panel>
+
+		<p:panel id="panelInsertar" header="#{msg['lbl.insertar']}"
+			styleClass="DispNone">
+			<h:form id="formNuevo">
+				<p:outputLabel value="Los campos marcados con * son Obligatorios"
+					styleClass="DispBlock" />
+				<div id="datosEstudiante">
+					<p:outputLabel value="Datos Estudiante" styleClass="subTitulos" />
+					<p:outputLabel value="* Cédula/RUC"
+						for="autoCompletarEstudianteMatricula" styleClass="DispBlock" />
+					<p:autoComplete id="autoCompletarEstudianteMatricula"
+						scrollHeight="200" effect="drop" placeholder="MINIMO 3 CARACTERES"
+						emptyMessage="NO HAY DATOS A MOSTRAR" minQueryLength="3"
+						maxResults="20" value="#{matriculaBean.estudianteMatricula}"
+						completeMethod="#{matriculaBean.obtenerEstudianteMatriculaPorBusqueda}"
+						styleClass="DispBlock Wid90 autoCompletar">
+						<p:ajax event="itemSelect" id="prueba"
+							listener="#{matriculaBean.cargarEstudianteMatricula}"
+							update="autoCompletarEstudianteMatricula, :mensaje" />
+					</p:autoComplete>
+					<p:outputLabel value="* Periodo" for="comboPeriodo"
+						styleClass="DispBlock" />
+					<p:selectOneMenu id="comboPeriodo" filter="true"
+						filterMatchMode="contains"
+						value="#{matriculaBean.matricula.periodo.id}"
+						styleClass="DispBlock Wid90">
+						<f:selectItem itemLabel="Escoja un Periodo" />
+						<f:selectItems value="#{matriculaBean.listaPeriodos}"
+							var="periodo" itemValue="#{periodo.id}"
+							itemLabel="#{periodo.nombre}" />
+					</p:selectOneMenu>
+					<p:outputLabel value="* Grado" for="comboGrado"
+						styleClass="DispBlock" />
+					<p:selectOneMenu id="comboGrado" filter="true"
+						filterMatchMode="contains"
+						value="#{matriculaBean.matricula.grado}"
+						styleClass="DispBlock Wid90">
+						<f:selectItem itemLabel="Escoja un Grado" />
+						<f:selectItems value="#{matriculaBean.listaGrados}" var="grado"
+							itemValue="#{grado}" itemLabel="#{grado.nombre}" />
+					</p:selectOneMenu>
+				</div>
+				<div class="EmptyBox10"></div>
+				<p:separator />
+				<p:commandButton value="#{msg['btn.guardar']}"
+					update=":formDataTable ,:mensaje, formNuevo"
+					oncomplete="comprobarInsertar(xhr, status, args, '')"
+					id="btnNuevoAceptar" icon="#{msg['i.guardar']}"
+					actionListener="#{matriculaBean.insertar}" styleClass="GreenButton" />
+				<p:commandButton value="#{msg['btn.cancelar']}"
+					oncomplete="mostarPanelInsertar('')" id="btnNuevolimpiar"
+					icon="#{msg['i.cancelar']}" process="@this" styleClass="RedButton" />
+			</h:form>
+		</p:panel>
+	</ui:define>
+</ui:composition>
