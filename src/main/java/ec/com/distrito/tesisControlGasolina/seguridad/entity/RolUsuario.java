@@ -1,4 +1,4 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity;
+package ec.com.distrito.tesisControlGasolina.seguridad.entity;
 
 import java.io.Serializable;
 
@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import ec.com.mariscalSucre.tesisMatriculacion.matriculacion.entity.Persona;
+import ec.com.distrito.tesisControlGasolina.control.entity.Chofer;
 
 @Entity
 @Table(name = "rolusuario")
@@ -22,16 +22,16 @@ public class RolUsuario implements Serializable {
 	private Integer id;
 	private Boolean activo;
 	private Rol rol;
-	private Persona persona;
+	private Chofer chofer;
 
 	public RolUsuario() {
 	}
 
-	public RolUsuario(Integer id, Boolean activo, Rol rol, Persona persona) {
+	public RolUsuario(Integer id, Boolean activo, Rol rol, Chofer chofer) {
 		this.id = id;
 		this.activo = activo;
 		this.rol = rol;
-		this.persona = persona;
+		this.chofer = chofer;
 	}
 
 	@Override
@@ -66,9 +66,9 @@ public class RolUsuario implements Serializable {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "personaid", nullable = false)
-	public Persona getPersona() {
-		return persona;
+	@JoinColumn(name = "choferid", nullable = false)
+	public Chofer getChofer() {
+		return chofer;
 	}
 
 	@ManyToOne
@@ -93,8 +93,8 @@ public class RolUsuario implements Serializable {
 		this.id = id;
 	}
 
-	public void setPersona(Persona persona) {
-		this.persona = persona;
+	public void setChofer(Chofer chofer) {
+		this.chofer = chofer;
 	}
 
 	public void setRol(Rol rol) {

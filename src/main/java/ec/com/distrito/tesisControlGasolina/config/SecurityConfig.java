@@ -28,25 +28,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/views/home.jsf")
 				.access("isAuthenticated()")
 
-				.antMatchers("/views/estudiantes/listadoEstudiantes.jsf")
-				.hasAnyAuthority("ADMINISTRADOR", "SECRETARIA", "DOSCENTE")
-				.antMatchers("/views/estudiantes/reportes.jsf")
-				.hasAnyAuthority("ADMINISTRADOR", "SECRETARIA", "DOSCENTE")
-				
-				.antMatchers("/views/matriculacion/listadoMatriculas.jsf")
+				.antMatchers("/views/choferes/listadoChoferes.jsf")
 				.hasAnyAuthority("ADMINISTRADOR", "SECRETARIA")
-				.antMatchers("/views/matriculacion/certificadoMatricula.jsf")
+				
+				.antMatchers("/views/vehiculos/listadoVehiculos.jsf")
 				.hasAnyAuthority("ADMINISTRADOR", "SECRETARIA")
-				.antMatchers("/views/matriculacion/periodosLectivos.jsf")
-				.hasAnyAuthority("ADMINISTRADOR")
 				
-				.antMatchers("/views/rrhh/empleado.jsf")
-				.hasAnyAuthority("ADMINISTRADOR")
-				.antMatchers("/views/rrhh/cargo.jsf")
-				.hasAnyAuthority("ADMINISTRADOR")
+				.antMatchers("/views/control/listadoOrdenes.jsf")
+				.hasAnyAuthority("ADMINISTRADOR", "SECRETARIA")
 				
-				.antMatchers("/views/parametros/configuracion.jsf")
-				.hasAnyAuthority("ADMINISTRADOR")
 				.antMatchers("/views/matriculacion/bitacora.jsf")
 				.hasAnyAuthority("ADMINISTRADOR")
 				
@@ -60,8 +50,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/views/seguridad/cambiarClaveNueva.jsf")
 				.access("isAuthenticated()")
 				.antMatchers("/views/seguridad/error.jsf")
-				.access("isAuthenticated()")
-				.antMatchers("/views/seguridad/errorPago.jsf")
 				.access("isAuthenticated()")
 								
 				.and().formLogin().loginPage("/login.jsf")
@@ -88,12 +76,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	private String getAuthoritiesQuery() {
 		return "select c.cedula , r.nombre "
-				+ "from matriculacion.persona as p, matriculacion.rol as r, matriculacion.rolusuario as ur "
-				+ "where p.personaid = ur.personaid and r.rolid = ur.rolid and ur.activo=true and p.cedula = ?";
+				+ "from distrito.chofer as c, distrito.rol as r, distrito.rolusuario as ur "
+				+ "where c.choferid = ur.choferid and r.rolid = ur.rolid and ur.activo=true and c.cedula = ?";
 	}
 
 	private String getUserQuery() {
-		return "select cedula, password, activo from matriculacion.persona "
+		return "select cedula, password, activo from matriculacion.chofer "
 				+ "where cedula = ?";
 	}
 }

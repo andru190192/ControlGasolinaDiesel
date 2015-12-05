@@ -1,0 +1,171 @@
+.blue:hover {
+	color: #1A9DCF;
+}
+
+.activo {
+	background: #7CFC00 !important;
+}
+
+.desactivo {
+	background: #F3ACA4 !important;
+}
+
+.normal {
+	background: #FFD700;
+}
+
+.subTitulos {
+	border-bottom: 1px solid #dddddc;
+	display: block;
+	margin-bottom: 0.5em;
+	margin-top: 1em;
+	width: 95%;
+}
+
+.panelBusqueda {
+	border: 1px solid #dddddc;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+.formReportes {
+	margin-top: 1em;
+}
+
+.selectManyListbox {
+	font-family: 'open_sansregular';
+	color: #778D9B !important;
+	cursor: pointer;
+	background-color: #EDF3F6;
+	border: 1px solid #D1D3D4;
+	width: 92%;
+	border-radius: 5px;
+	padding: 9px;
+}
+
+.selectManyListbox option:hover {
+	background-color: #fff !important;
+}
+
+.selectManyListbox option:checked {
+	color: #33AFDE !important;
+	background-color: #fff !important;
+}
+
+.ui-tabs .ui-tabs-panel {
+	border-width: 0;
+	padding: 0;
+	background: none;
+}
+
+.Wid6em {
+	width: 6em;
+}
+
+.Wid5 {
+	width: 5%;
+}
+
+.Wid3 {
+	width: 3%;
+}
+
+.Wid7_5 {
+	width: 7.5%;
+}
+
+.codigoFactura {
+	padding: 0.3em !important;
+	width: 90% !important;
+}
+
+.calendario input {
+	width: 100%;
+}
+
+.CalendarioW90 input {
+	width: 90%;
+}
+
+.autoCompletar input {
+	width: 100%;
+}
+
+.divTabla {
+	margin-bottom: 10px;
+}
+
+.botonBuscar {
+	margin-left: 1em;
+	margin-right: 0;
+}
+
+.dialogoPago {
+	left: 100px !important;
+}
+
+.margin0 p {
+	margin: 0;
+}
+
+@media ( min-width : 961px) {
+	#layout-menu>li a i:nth-child(2n) {
+		display: none;
+	}
+	.divDatos {
+		display: inline-block;
+		float: left;
+		margin-bottom: 10px;
+		width: 40%;
+	}
+	.divTabla {
+		display: inline-block;
+		float: right;
+		margin-bottom: 10px;
+		width: 60%;
+	}
+	.divDatosIzq50 {
+		display: inline-block;
+		float: left;
+		margin-bottom: 10px;
+		width: 50%;
+	}
+	.divDatosDer50 {
+		display: inline-block;
+		float: right;
+		margin-bottom: 10px;
+		width: 50%;
+	}
+	.formReportes {
+		display: inline-table;
+		margin-right: 2em;
+		width: 250px;
+	}
+	.kardexSaldo input {
+		display: inline-block;
+		width: 20% !important;
+		margin: 0 1em;
+	}
+	.kardexSaldo label {
+		display: inline-block;
+	}
+	.inputConButton {
+		width: calc(90% - 46px) !important;
+	}
+	.CalendarConButton input {
+		width: calc(90% - 46px) !important;
+	}
+	.Wid95 {
+		width: 95% !important;
+	}
+}
+
+@media ( max-width : 560px) {
+	.ui-column-title {
+		float: left;
+		text-align: left;
+	}
+	.botonBuscar {
+		margin: 1em 0;
+	}
+}

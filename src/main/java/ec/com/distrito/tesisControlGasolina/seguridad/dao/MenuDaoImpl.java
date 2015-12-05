@@ -1,11 +1,11 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.dao;
+package ec.com.distrito.tesisControlGasolina.seguridad.dao;
 
 import java.io.Serializable;
 
 import org.springframework.stereotype.Repository;
 
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity.Menu;
-import ec.com.mariscalSucre.tesisMatriculacion.utils.dao.GenericDaoImpl;
+import ec.com.distrito.tesisControlGasolina.seguridad.entity.Menu;
+import ec.com.distrito.tesisControlGasolina.utils.dao.GenericDaoImpl;
 
 @Repository
 public class MenuDaoImpl extends GenericDaoImpl<Menu, Integer> implements

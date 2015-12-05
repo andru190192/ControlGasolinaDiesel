@@ -1,4 +1,4 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity;
+package ec.com.distrito.tesisControlGasolina.seguridad.entity;
 
 import java.io.Serializable;
 import java.util.List;

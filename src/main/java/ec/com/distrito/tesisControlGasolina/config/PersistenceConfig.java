@@ -54,7 +54,7 @@ public class PersistenceConfig {
 			{
 				setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
 				setProperty("hibernate.show_sql", "true");
-				setProperty("hibernate.default_schema", "matriculacion");
+				setProperty("hibernate.default_schema", "distrito");
 			}
 		};
 	}
@@ -63,7 +63,7 @@ public class PersistenceConfig {
 	public LocalSessionFactoryBean sessionFactory() {
 		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
 		sessionFactory.setDataSource(dataSource());
-		sessionFactory.setPackagesToScan(new String[] { "ec.com.mariscalSucre" });
+		sessionFactory.setPackagesToScan(new String[] { "ec.com.distrito" });
 		sessionFactory.setHibernateProperties(hibernateProperties());
 
 		return sessionFactory;

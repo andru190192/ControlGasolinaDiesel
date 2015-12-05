@@ -1,15 +1,14 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.dao;
+package ec.com.distrito.tesisControlGasolina.seguridad.dao;
 
 import java.io.Serializable;
 
 import org.springframework.stereotype.Repository;
 
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity.Bitacora;
-import ec.com.mariscalSucre.tesisMatriculacion.utils.dao.GenericDaoImpl;
+import ec.com.distrito.tesisControlGasolina.seguridad.entity.Bitacora;
+import ec.com.distrito.tesisControlGasolina.utils.dao.GenericDaoImpl;
 
 @Repository
-public class BitacoraDaoImpl extends GenericDaoImpl<Bitacora, Integer>
-		implements BitacoraDao, Serializable {
+public class BitacoraDaoImpl extends GenericDaoImpl<Bitacora, Integer>implements BitacoraDao, Serializable {
 
 	private static final long serialVersionUID = 1L;
 

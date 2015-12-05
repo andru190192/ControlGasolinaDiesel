@@ -1,6 +1,6 @@
-package ec.com.mariscalSucre.tesisMatriculacion.utils.service;
+package ec.com.distrito.tesisControlGasolina.utils.service;
 
-import static ec.com.mariscalSucre.tesisMatriculacion.utils.UtilsAplicacion.presentaMensaje;
+import static ec.com.distrito.tesisControlGasolina.utils.UtilsAplicacion.presentaMensaje;
 
 import java.io.File;
 import java.io.FileInputStream;

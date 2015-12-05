@@ -1,4 +1,4 @@
-package ec.com.mariscalSucre.tesisMatriculacion.utils.enums;
+package ec.com.distrito.tesisControlGasolina.utils.enums;
 
 public enum Meses {
 	ENERO(1, "ENERO"), FEBRERO(2, "FEBRERO"), MARZO(3, "MARZO"), ABRIL(4,

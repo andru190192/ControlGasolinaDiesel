@@ -1,4 +1,4 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.controller;
+package ec.com.distrito.tesisControlGasolina.seguridad.controller;
 
 import java.io.Serializable;
 
@@ -6,14 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
-import ec.com.mariscalSucre.tesisMatriculacion.matriculacion.service.PersonaService;
+import ec.com.distrito.tesisControlGasolina.control.service.ChoferService;
 
 @Controller
 @Scope("session")
 public class CambiarClaveBean implements Serializable {
 
 	@Autowired
-	private PersonaService personaService;
+	private ChoferService personaService;
 
 	private static final long serialVersionUID = 1L;
 	private String claveActual;

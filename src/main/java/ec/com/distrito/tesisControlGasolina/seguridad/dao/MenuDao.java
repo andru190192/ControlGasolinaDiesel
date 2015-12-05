@@ -1,7 +1,7 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.dao;
+package ec.com.distrito.tesisControlGasolina.seguridad.dao;
 
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity.Menu;
-import ec.com.mariscalSucre.tesisMatriculacion.utils.dao.GenericDao;
+import ec.com.distrito.tesisControlGasolina.seguridad.entity.Menu;
+import ec.com.distrito.tesisControlGasolina.utils.dao.GenericDao;
 
 public interface MenuDao extends GenericDao<Menu, Integer> {
 

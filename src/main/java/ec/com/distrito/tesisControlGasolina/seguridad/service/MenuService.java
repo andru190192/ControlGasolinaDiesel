@@ -1,10 +1,10 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.service;
+package ec.com.distrito.tesisControlGasolina.seguridad.service;
 
 import java.util.List;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity.Menu;
+import ec.com.distrito.tesisControlGasolina.seguridad.entity.Menu;
 
 public interface MenuService {
 	@Transactional

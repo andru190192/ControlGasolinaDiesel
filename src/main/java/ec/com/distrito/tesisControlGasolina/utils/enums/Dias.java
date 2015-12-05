@@ -1,4 +1,4 @@
-package ec.com.mariscalSucre.tesisMatriculacion.utils.enums;
+package ec.com.distrito.tesisControlGasolina.utils.enums;
 
 public enum Dias {
 	LUNES(1, "LUNES"), MARTES(2, "MARTES"), MIERCOLES(3, "MIERCOLES"), JUEVES(

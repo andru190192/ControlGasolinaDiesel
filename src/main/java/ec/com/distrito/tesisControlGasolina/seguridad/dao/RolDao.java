@@ -1,7 +1,7 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.dao;
+package ec.com.distrito.tesisControlGasolina.seguridad.dao;
 
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity.Rol;
-import ec.com.mariscalSucre.tesisMatriculacion.utils.dao.GenericDao;
+import ec.com.distrito.tesisControlGasolina.seguridad.entity.Rol;
+import ec.com.distrito.tesisControlGasolina.utils.dao.GenericDao;
 
 public interface RolDao extends GenericDao<Rol, Integer> {
 

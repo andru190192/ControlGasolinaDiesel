@@ -1,4 +1,4 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity;
+package ec.com.distrito.tesisControlGasolina.seguridad.entity;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
@@ -13,7 +13,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import ec.com.mariscalSucre.tesisMatriculacion.matriculacion.entity.Persona;
+import ec.com.distrito.tesisControlGasolina.control.entity.Chofer;
 
 @Entity
 @Table(name = "bitacora")
@@ -23,15 +23,15 @@ public class Bitacora implements Serializable {
 	private Long id;
 	private Timestamp fecha;
 	private String metodo;
-	private Persona persona;
+	private Chofer chofer;
 
 	public Bitacora() {
 	}
 
-	public Bitacora(Timestamp fecha, String metodo, Persona persona) {
+	public Bitacora(Timestamp fecha, String metodo, Chofer chofer) {
 		this.fecha = fecha;
 		this.metodo = metodo;
-		this.persona = persona;
+		this.chofer = chofer;
 	}
 
 	@Override
@@ -71,9 +71,9 @@ public class Bitacora implements Serializable {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "personaid", nullable = false)
-	public Persona getPersona() {
-		return persona;
+	@JoinColumn(name = "choferid", nullable = false)
+	public Chofer getChofer() {
+		return chofer;
 	}
 
 	@Override
@@ -100,8 +100,8 @@ public class Bitacora implements Serializable {
 		this.metodo = metodo;
 	}
 
-	public void setPersona(Persona persona) {
-		this.persona = persona;
+	public void setChofer(Chofer chofer) {
+		this.chofer = chofer;
 	}
 
 }

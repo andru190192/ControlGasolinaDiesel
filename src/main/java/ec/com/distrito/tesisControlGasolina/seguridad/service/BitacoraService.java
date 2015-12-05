@@ -1,11 +1,11 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.service;
+package ec.com.distrito.tesisControlGasolina.seguridad.service;
 
 import java.util.Date;
 import java.util.List;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity.Bitacora;
+import ec.com.distrito.tesisControlGasolina.seguridad.entity.Bitacora;
 
 public interface BitacoraService {
 	@Transactional

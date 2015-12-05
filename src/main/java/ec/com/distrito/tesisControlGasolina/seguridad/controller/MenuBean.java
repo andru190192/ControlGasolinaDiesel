@@ -1,7 +1,6 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.controller;
+package ec.com.distrito.tesisControlGasolina.seguridad.controller;
 
-import static ec.com.mariscalSucre.tesisMatriculacion.utils.UtilsAplicacion.redireccionar;
-import static ec.com.mariscalSucre.tesisMatriculacion.utils.UtilsMath.actualizar;
+import static ec.com.distrito.tesisControlGasolina.utils.UtilsAplicacion.redireccionar;
 
 import java.io.Serializable;
 import java.util.List;
@@ -18,12 +17,11 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 
-import ec.com.mariscalSucre.tesisMatriculacion.matriculacion.entity.Persona;
-import ec.com.mariscalSucre.tesisMatriculacion.matriculacion.service.ParametroService;
-import ec.com.mariscalSucre.tesisMatriculacion.matriculacion.service.PersonaService;
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity.Menu;
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.service.MenuService;
-import ec.com.mariscalSucre.tesisMatriculacion.utils.UtilsAplicacion;
+import ec.com.distrito.tesisControlGasolina.control.entity.Chofer;
+import ec.com.distrito.tesisControlGasolina.control.service.ChoferService;
+import ec.com.distrito.tesisControlGasolina.seguridad.entity.Menu;
+import ec.com.distrito.tesisControlGasolina.seguridad.service.MenuService;
+import ec.com.distrito.tesisControlGasolina.utils.UtilsAplicacion;
 
 @Controller
 @Scope("session")
@@ -35,10 +33,7 @@ public class MenuBean implements Serializable {
 	private MenuService menuService;
 
 	@Autowired
-	private ParametroService parametroService;
-
-	@Autowired
-	private PersonaService personaService;
+	private ChoferService choferService;
 
 	private MenuModel menuModel;
 	private String nombreUsuario;
@@ -102,13 +97,12 @@ public class MenuBean implements Serializable {
 
 	@PostConstruct
 	public void init() {
-		actualizar(parametroService.obtener());
-		UtilsAplicacion.actualizarPaginaWeb("www.mariscalsucre.com");
-		Persona p = personaService
+		UtilsAplicacion.actualizarPaginaWeb("www.educacion.gob.ec");
+		Chofer p = choferService
 				.obtenerActivoPorCedula(SecurityContextHolder.getContext().getAuthentication().getName());
 		setNombreUsuario(p.getNombre() + " " + p.getApellido());
 		cargarMenu();
-		String claveActual = personaService.generarClave(p.getCedula());
+		String claveActual = choferService.generarClave(p.getCedula());
 		if (claveActual.compareTo(p.getPassword()) == 0)
 			redireccionar("/negosys/views/seguridad/cambiarClaveNueva.jsf");
 	}

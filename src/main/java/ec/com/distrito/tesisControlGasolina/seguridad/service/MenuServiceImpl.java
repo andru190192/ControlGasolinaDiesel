@@ -1,4 +1,4 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.service;
+package ec.com.distrito.tesisControlGasolina.seguridad.service;
 
 import java.io.Serializable;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.dao.MenuDao;
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity.Menu;
+import ec.com.distrito.tesisControlGasolina.seguridad.dao.MenuDao;
+import ec.com.distrito.tesisControlGasolina.seguridad.entity.Menu;
 
 @Service
 public class MenuServiceImpl implements MenuService, Serializable {
@@ -36,12 +36,10 @@ public class MenuServiceImpl implements MenuService, Serializable {
 	}
 
 	public List<Menu> obtenerPorUsuario(String cedulaRuc) {
-		return menuDao
-				.obtenerPorHql(
-						"select distinct m from Menu m "
-								+ "inner join m.rolMenus rm inner join rm.rol r "
-								+ "inner join r.rolUsuarios ru inner join ru.persona p "
-								+ "where ru.activo=true and m.visible=true and p.cedula=?1 order by m.id",
-						new Object[] { cedulaRuc });
+		return menuDao.obtenerPorHql(
+				"select distinct m from Menu m " + "inner join m.rolMenus rm inner join rm.rol r "
+						+ "inner join r.rolUsuarios ru inner join ru.persona p "
+						+ "where ru.activo=true and m.visible=true and p.cedula=?1 order by m.id",
+				new Object[] { cedulaRuc });
 	}
 }

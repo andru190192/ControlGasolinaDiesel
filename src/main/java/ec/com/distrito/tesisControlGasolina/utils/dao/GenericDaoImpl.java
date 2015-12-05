@@ -1,4 +1,4 @@
-package ec.com.mariscalSucre.tesisMatriculacion.utils.dao;
+package ec.com.distrito.tesisControlGasolina.utils.dao;
 
 import java.io.Serializable;
 import java.util.List;

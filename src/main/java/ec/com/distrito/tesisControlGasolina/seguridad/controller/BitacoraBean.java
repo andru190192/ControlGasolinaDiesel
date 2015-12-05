@@ -1,4 +1,4 @@
-package ec.com.mariscalSucre.tesisMatriculacion.seguridad.controller;
+package ec.com.distrito.tesisControlGasolina.seguridad.controller;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -12,10 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
-import ec.com.mariscalSucre.tesisMatriculacion.matriculacion.entity.Persona;
-import ec.com.mariscalSucre.tesisMatriculacion.matriculacion.service.PersonaService;
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.entity.Bitacora;
-import ec.com.mariscalSucre.tesisMatriculacion.seguridad.service.BitacoraService;
+import ec.com.distrito.tesisControlGasolina.control.entity.Chofer;
+import ec.com.distrito.tesisControlGasolina.control.service.ChoferService;
+import ec.com.distrito.tesisControlGasolina.seguridad.entity.Bitacora;
+import ec.com.distrito.tesisControlGasolina.seguridad.service.BitacoraService;
 
 @Controller
 @Scope("session")
@@ -27,24 +27,24 @@ public class BitacoraBean implements Serializable {
 	BitacoraService bitacoraService;
 
 	@Autowired
-	PersonaService personaService;
+	ChoferService choferService;
 
-	private Persona persona;
+	private Chofer persona;
 	private String criterio;
 	private Date fechaInicio;
 
 	List<Bitacora> listaBitacora;
-	List<Persona> listaPersonas;
+	List<Chofer> listaPersonas;
 
 	public BitacoraBean() {
 	}
 
 	public void buscarUsuario() {
-		listaPersonas = personaService.obtenerTodosPorBusqueda(criterio, 0);
+		listaPersonas = choferService.obtenerTodosPorBusqueda(criterio);
 	}
 
 	public void cargarUsuario(SelectEvent event) {
-		persona = personaService.obtenerPorPersonaId(persona.getId());
+		persona = choferService.obtenerPorChoferId(persona.getId());
 	}
 
 	public void consultar() {
@@ -64,17 +64,17 @@ public class BitacoraBean implements Serializable {
 		return listaBitacora;
 	}
 
-	public List<Persona> getListaPersonas() {
+	public List<Chofer> getListaPersonas() {
 		return listaPersonas;
 	}
 
-	public Persona getPersona() {
+	public Chofer getPersona() {
 		return persona;
 	}
 
 	@PostConstruct
 	public void init() {
-		persona = new Persona();
+		persona = new Chofer();
 		fechaInicio = new Date();
 	}
 
@@ -90,11 +90,11 @@ public class BitacoraBean implements Serializable {
 		this.listaBitacora = listaBitacora;
 	}
 
-	public void setListaPersonas(List<Persona> listaPersonas) {
+	public void setListaPersonas(List<Chofer> listaPersonas) {
 		this.listaPersonas = listaPersonas;
 	}
 
-	public void setPersona(Persona persona) {
+	public void setPersona(Chofer persona) {
 		this.persona = persona;
 	}
 
