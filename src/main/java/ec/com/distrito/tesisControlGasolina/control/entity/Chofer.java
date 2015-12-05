@@ -9,8 +9,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -38,7 +36,6 @@ public class Chofer implements Serializable {
 	private String email;
 	private String password;
 	private Boolean activo;
-	private ControlGasto controlGasto;
 	private List<Bitacora> bitacoras;
 	private List<RolUsuario> rolUsuarios;
 
@@ -46,8 +43,8 @@ public class Chofer implements Serializable {
 	}
 
 	public Chofer(Integer id, String cedula, String apellido, String nombre, String direccion, String licencia,
-			String tipoSangre, String telefono, String email, String password, Boolean activo,
-			ControlGasto controlGasto, List<Bitacora> bitacoras, List<RolUsuario> rolUsuarios) {
+			String tipoSangre, String telefono, String email, String password, Boolean activo, List<Bitacora> bitacoras,
+			List<RolUsuario> rolUsuarios) {
 		this.id = id;
 		this.cedula = cedula;
 		this.apellido = apellido;
@@ -59,7 +56,6 @@ public class Chofer implements Serializable {
 		this.email = email;
 		this.password = password;
 		this.activo = activo;
-		this.controlGasto = controlGasto;
 		this.bitacoras = bitacoras;
 		this.rolUsuarios = rolUsuarios;
 	}
@@ -125,12 +121,6 @@ public class Chofer implements Serializable {
 		return id;
 	}
 
-	@ManyToOne
-	@JoinColumn(name = "controlgastoid", nullable = false)
-	public ControlGasto getControlGasto() {
-		return this.controlGasto;
-	}
-
 	@Pattern(regexp = "[0-9]{10}+|[0-9]{13}+", message = "EL CAMPO CÉDULA ACEPTA DE 10 A 13 DÍGITOS NUMÉRICOS")
 	@Column(nullable = false, length = 13)
 	public String getCedula() {
@@ -183,12 +173,12 @@ public class Chofer implements Serializable {
 		return this.activo;
 	}
 
-	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL, mappedBy = "persona")
+	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL, mappedBy = "chofer")
 	public List<Bitacora> getBitacoras() {
 		return bitacoras;
 	}
 
-	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL, mappedBy = "persona")
+	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL, mappedBy = "chofer")
 	public List<RolUsuario> getRolUsuarios() {
 		return rolUsuarios;
 	}
@@ -227,10 +217,6 @@ public class Chofer implements Serializable {
 
 	public void setRolUsuarios(List<RolUsuario> rolUsuarios) {
 		this.rolUsuarios = rolUsuarios;
-	}
-
-	public void setControlGasto(ControlGasto controlGasto) {
-		this.controlGasto = controlGasto;
 	}
 
 	public void setLicencia(String licencia) {

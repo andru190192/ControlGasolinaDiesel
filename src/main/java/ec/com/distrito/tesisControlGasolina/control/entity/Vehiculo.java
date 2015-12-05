@@ -12,7 +12,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.Pattern;
 
 @Entity
-@Table(name = "persona")
+@Table(name = "vehiculo")
 public class Vehiculo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
