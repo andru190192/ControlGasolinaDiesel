@@ -25,22 +25,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.authorizeRequests()
 				.antMatchers("/javax.faces.resource/**", "/resources/**",
 						"/login.jsf").permitAll()
-				.antMatchers("/views/home.jsf")
-				.access("isAuthenticated()")
+				.antMatchers("/views/home.jsf").access("isAuthenticated()")
 
 				.antMatchers("/views/choferes/listadoChoferes.jsf")
 				.hasAnyAuthority("ADMINISTRADOR", "SECRETARIA")
-				
+
 				.antMatchers("/views/vehiculos/listadoVehiculos.jsf")
 				.hasAnyAuthority("ADMINISTRADOR", "SECRETARIA")
-				
+
 				.antMatchers("/views/control/listadoOrdenes.jsf")
 				.hasAnyAuthority("ADMINISTRADOR", "SECRETARIA")
-				
+
 				.antMatchers("/views/matriculacion/bitacora.jsf")
 				.hasAnyAuthority("ADMINISTRADOR")
-				
-				
+
 				.antMatchers("/views/seguridad/404.jsf")
 				.access("isAuthenticated()")
 				.antMatchers("/views/seguridad/accesoDenegado.jsf")
@@ -51,15 +49,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.access("isAuthenticated()")
 				.antMatchers("/views/seguridad/error.jsf")
 				.access("isAuthenticated()")
-								
+
 				.and().formLogin().loginPage("/login.jsf")
-				.defaultSuccessUrl("/views/home.jsf")
-				.and().logout().logoutUrl("/logout.jsf")
-				.logoutSuccessUrl("/login.jsf")
-				.invalidateHttpSession(true)
-				.deleteCookies("JSESSIONID")
-				.and().sessionManagement()
-				.invalidSessionUrl("/login.jsf")
+				.defaultSuccessUrl("/views/home.jsf").and().logout()
+				.logoutUrl("/logout.jsf").logoutSuccessUrl("/login.jsf")
+				.invalidateHttpSession(true).deleteCookies("JSESSIONID").and()
+				.sessionManagement().invalidSessionUrl("/login.jsf")
 				.maximumSessions(1);
 	}
 
@@ -81,7 +76,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 
 	private String getUserQuery() {
-		return "select cedula, password, activo from matriculacion.chofer "
+		return "select cedula, password, activo from distrito.chofer "
 				+ "where cedula = ?";
 	}
 }
