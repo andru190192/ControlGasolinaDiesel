@@ -63,18 +63,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			throws Exception {
 		PersistenceConfig persistenceConfig = new PersistenceConfig();
 
+		//encriptacion de la clave
 		auth.jdbcAuthentication().dataSource(persistenceConfig.dataSource())
 				.passwordEncoder(new ShaPasswordEncoder(256))
 				.usersByUsernameQuery(getUserQuery())
 				.authoritiesByUsernameQuery(getAuthoritiesQuery());
 	}
-
+	//consulta para saber los roles o permisos de ese usuario
 	private String getAuthoritiesQuery() {
 		return "select c.cedula , r.nombre "
 				+ "from distrito.chofer as c, distrito.rol as r, distrito.rolusuario as ur "
 				+ "where c.choferid = ur.choferid and r.rolid = ur.rolid and ur.activo=true and c.cedula = ?";
 	}
 
+	//consulta para el login 
 	private String getUserQuery() {
 		return "select cedula, password, activo from distrito.chofer "
 				+ "where cedula = ?";
