@@ -1,0 +1,243 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" template="/WEB-INF/template.xhtml">
+
+	<ui:define name="title">-Chofer</ui:define>
+
+	<ui:define name="content">
+		<p:panel id="panelPrincipal" header="Estudiantes">
+			<h:form id="busquedaTabla">
+				<p:outputLabel value="Cédula/Apellido-Nombre" for="busquedaChoferes"
+					styleClass="DispBlock" />
+				<p:inputText id="busquedaChoferes"
+					placeholder="Puede buscar por cedula, nombre o apellido"
+					value="#{choferBean.criterioBusquedaChofer}"
+					onblur="this.value = this.value.toUpperCase();"
+					styleClass="DispBlock Wid90" />
+				<div class="EmptyBox10"></div>
+				<p:commandButton update="busquedaTabla, :formDataTable, :mensaje"
+					icon="#{msg['i.buscar']}" value="#{msg['btn.buscar']}"
+					actionListener="#{choferBean.obtenerChoferes}" />
+				<div class="EmptyBox10"></div>
+			</h:form>
+			<h:form id="formDataTable">
+				<p:dataTable id="tablaChoferes" var="chofer" scrollable="true"
+					reflow="true" value="#{choferBean.listaChoferes}" paginator="true"
+					rows="10"
+					paginatorTemplate="{RowsPerPageDropdown} {FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+					paginatorPosition="bottom"
+					rowStyleClass="#{chofer.activo eq true ? null:'desactivo'}"
+					emptyMessage="#{msg['lbl.mensajeTabla']}">
+					<f:facet name="header">
+						<p:tooltip for="btnNuevo" value="#{msg['lbl.insertar']}" />
+						<p:commandButton update=":formNuevo"
+							oncomplete="mostarPanelInsertar('')"
+							action="#{choferBean.cargarInsertar}" id="btnNuevo"
+							icon="#{msg['i.nuevo']}" />
+					</f:facet>
+					<p:column headerText="#{msg['lbl.gestionar']}">
+						<p:tooltip for="btnEditar" value="#{msg['lbl.editar']}" />
+						<p:tooltip for="btnEliminar"
+							value="#{chofer.activo eq true ? msg['lbl.desactivar']: msg['lbl.activar']}" />
+						<p:commandButton id="btnEditar" update=":mensaje, :formEditar"
+							action="#{choferBean.cargarEditar}"
+							oncomplete="mostarPanelEditar('')" icon="#{msg['i.editar']}">
+							<f:setPropertyActionListener value="#{chofer}"
+								target="#{choferBean.chofer}" />
+						</p:commandButton>
+
+						<p:commandButton id="btnEliminar" update=":mensaje, :formEliminar"
+							oncomplete="mostarPanelEliminar('')"
+							icon="#{chofer.activo eq true ? msg['i.eliminar']: msg['i.activar']}">
+							<f:setPropertyActionListener value="#{chofer}"
+								target="#{choferBean.chofer}" />
+						</p:commandButton>
+					</p:column>
+					<p:column headerText="Cod.">
+						<p:outputLabel value="#{chofer.id}" />
+					</p:column>
+					<p:column headerText="Cédula-RUC">
+						<p:outputLabel value="#{chofer.cedula}" />
+					</p:column>
+					<p:column headerText="Apellidos">
+						<p:outputLabel value="#{chofer.apellido}" />
+					</p:column>
+					<p:column headerText="Nombres">
+						<p:outputLabel value="#{chofer.nombre}" />
+					</p:column>
+					<p:column headerText="Licencia">
+						<p:outputLabel value="#{chofer.licencia}" />
+					</p:column>
+					<p:column headerText="Telefono">
+						<p:outputLabel value="#{chofer.telefono}" />
+					</p:column>
+					<p:column headerText="Email">
+						<p:outputLabel value="#{chofer.email}" />
+					</p:column>
+				</p:dataTable>
+			</h:form>
+		</p:panel>
+
+
+		<p:panel id="panelInsertar" header="#{msg['lbl.insertar']}"
+			styleClass="DispNone">
+			<h:form id="formNuevo">
+				<p:outputLabel value="Los campos marcados con * son Obligatorios"
+					styleClass="DispBlock" />
+				<div class="divDatosIzq50">
+					<div id="datosChofer" class="divDatosIzq50">
+						<p:outputLabel value="Datos Chofer" styleClass="subTitulos" />
+						<p:outputLabel value="* Cédula/RUC" for="cedula"
+							styleClass="DispBlock" />
+						<p:inputText id="cedula" value="#{choferBean.chofer.cedula}"
+							styleClass="DispBlock Wid90">
+							<p:ajax event="blur" listener="#{choferBean.comprobarChofer}"
+								update="formNuevo,:mensaje" />
+						</p:inputText>
+						<p:outputLabel value="* Apellidos" for="apellidos"
+							styleClass="DispBlock" />
+						<p:inputText id="apellidos" value="#{choferBean.chofer.apellido}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
+						<p:outputLabel value="* Nombres" for="nombres"
+							styleClass="DispBlock" />
+						<p:inputText id="nombres" value="#{choferBean.chofer.nombre}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
+						<p:outputLabel value="Direccion" for="direccion"
+							styleClass="DispBlock" />
+						<p:inputText id="direccion" rows="2"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{choferBean.chofer.direccion}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Licencia" for="licencia"
+							styleClass="DispBlock" />
+						<p:inputText id="licencia"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{choferBean.chofer.licencia}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Tipo de Sandre" for="tipoSangre"
+							styleClass="DispBlock" />
+						<p:inputText id="tipoSangre"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{choferBean.chofer.tipoSangre}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Telefono" for="telefono"
+							styleClass="DispBlock" />
+						<p:inputText id="telefono"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{choferBean.chofer.telefono}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Email" for="email" styleClass="DispBlock" />
+						<p:inputText id="email" rows="2"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{choferBean.chofer.email}" styleClass="DispBlock Wid90" />
+					</div>
+				</div>
+				<div class="EmptyBox10"></div>
+				<p:separator />
+				<p:commandButton value="#{msg['btn.guardar']}"
+					update=":formDataTable ,:mensaje, formNuevo"
+					oncomplete="comprobarInsertar(xhr, status, args, '')"
+					id="btnNuevoAceptar" icon="#{msg['i.guardar']}"
+					actionListener="#{choferBean.insertar}" styleClass="GreenButton" />
+				<p:commandButton value="#{msg['btn.cancelar']}"
+					oncomplete="mostarPanelInsertar('')" id="btnNuevolimpiar"
+					icon="#{msg['i.cancelar']}" process="@this" styleClass="RedButton" />
+			</h:form>
+		</p:panel>
+
+		<p:panel id="panelEditar" header="#{msg['lbl.editar']}"
+			styleClass="DispNone">
+			<h:form id="formEditar">
+				<p:outputLabel value="Los campos marcados con * son Obligatorios"
+					styleClass="DispBlock" />
+				<div class="divDatosIzq50">
+					<div id="datosChofer" class="divDatosIzq50">
+						<p:outputLabel value="Datos Chofer" styleClass="subTitulos" />
+						<p:outputLabel value="* Cédula/RUC" for="cedula"
+							styleClass="DispBlock" />
+						<p:inputText id="cedula" value="#{choferBean.chofer.cedula}"
+							styleClass="DispBlock Wid90">
+							<p:ajax event="blur" listener="#{choferBean.comprobarChofer}"
+								update="formNuevo,:mensaje" />
+						</p:inputText>
+						<p:outputLabel value="* Apellidos" for="apellidos"
+							styleClass="DispBlock" />
+						<p:inputText id="apellidos" value="#{choferBean.chofer.apellido}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
+						<p:outputLabel value="* Nombres" for="nombres"
+							styleClass="DispBlock" />
+						<p:inputText id="nombres" value="#{choferBean.chofer.nombre}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
+						<p:outputLabel value="Direccion" for="direccion"
+							styleClass="DispBlock" />
+						<p:inputText id="direccion" rows="2"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{choferBean.chofer.direccion}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Licencia" for="licencia"
+							styleClass="DispBlock" />
+						<p:inputText id="licencia"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{choferBean.chofer.licencia}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Tipo de Sandre" for="tipoSangre"
+							styleClass="DispBlock" />
+						<p:inputText id="tipoSangre"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{choferBean.chofer.tipoSangre}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Telefono" for="telefono"
+							styleClass="DispBlock" />
+						<p:inputText id="telefono"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{choferBean.chofer.telefono}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Email" for="email" styleClass="DispBlock" />
+						<p:inputText id="email" rows="2"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{choferBean.chofer.email}" styleClass="DispBlock Wid90" />
+					</div>
+				</div>
+				<div class="EmptyBox10"></div>
+				<p:separator />
+				<p:commandButton value="#{msg['btn.guardar']}"
+					update=":formDataTable ,:mensaje, formEditar"
+					oncomplete="comprobarEditar(xhr, status, args, '')"
+					id="btnNuevoAceptar" icon="#{msg['i.guardar']}"
+					actionListener="#{choferBean.actualizar}" styleClass="GreenButton" />
+				<p:commandButton value="#{msg['btn.cancelar']}"
+					oncomplete="mostarPanelEditar('')" id="btnNuevolimpiar"
+					icon="#{msg['i.cancelar']}" process="@this" styleClass="RedButton" />
+			</h:form>
+		</p:panel>
+		<p:panel id="panelEliminar"
+			header="#{msg['lbl.activar']}/#{msg['lbl.desactivar']}"
+			styleClass="DispNone">
+			<h:form id="formEliminar">
+				<h:inputHidden value="#{choferBean.chofer.id}" />
+				<div class="EmptyBox30"></div>
+				<p:outputLabel
+					value="¿Desea #{choferBean.chofer.activo eq true ? msg['lbl.desactivar'] : msg['lbl.activar']} el Chofer: #{choferBean.chofer.cedula} - #{choferBean.chofer.apellido} #{choferBean.chofer.nombre}?" />
+				<div class="EmptyBox30"></div>
+				<p:separator />
+				<p:commandButton value="#{msg['btn.aceptar']}"
+					update=":formDataTable,:mensaje" icon="#{msg['i.activar']}"
+					oncomplete="mostarPanelEliminar('')"
+					actionListener="#{choferBean.eliminar}" styleClass="GreenButton" />
+				<p:commandButton value="#{msg['btn.cancelar']}"
+					onclick="mostarPanelEliminar('')" icon="#{msg['i.cancelar']}"
+					styleClass="RedButton" />
+			</h:form>
+		</p:panel>
+	</ui:define>
+</ui:composition>

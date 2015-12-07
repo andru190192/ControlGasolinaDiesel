@@ -1,0 +1,201 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" template="/WEB-INF/template.xhtml">
+
+	<ui:define name="title">-Vehiculo</ui:define>
+
+	<ui:define name="content">
+		<p:panel id="panelPrincipal" header="Estudiantes">
+			<h:form id="busquedaTabla">
+				<p:outputLabel value="Cédula/Apellido-Nombre"
+					for="busquedaVehiculos" styleClass="DispBlock" />
+				<p:inputText id="busquedaVehiculos"
+					placeholder="Puede buscar por placa, marca o modelo"
+					value="#{vehiculoBean.criterioBusquedaVehiculo}"
+					onblur="this.value = this.value.toUpperCase();"
+					styleClass="DispBlock Wid90" />
+				<div class="EmptyBox10"></div>
+				<p:commandButton update="busquedaTabla, :formDataTable, :mensaje"
+					icon="#{msg['i.buscar']}" value="#{msg['btn.buscar']}"
+					actionListener="#{vehiculoBean.obtenerVehiculos}" />
+				<div class="EmptyBox10"></div>
+			</h:form>
+			<h:form id="formDataTable">
+				<p:dataTable id="tablaVehiculos" var="vehiculo" scrollable="true"
+					reflow="true" value="#{vehiculoBean.listaVehiculos}"
+					paginator="true" rows="10"
+					paginatorTemplate="{RowsPerPageDropdown} {FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+					paginatorPosition="bottom"
+					rowStyleClass="#{vehiculo.activo eq true ? null:'desactivo'}"
+					emptyMessage="#{msg['lbl.mensajeTabla']}">
+					<f:facet name="header">
+						<p:tooltip for="btnNuevo" value="#{msg['lbl.insertar']}" />
+						<p:commandButton update=":formNuevo"
+							oncomplete="mostarPanelInsertar('')"
+							action="#{vehiculoBean.cargarInsertar}" id="btnNuevo"
+							icon="#{msg['i.nuevo']}" />
+					</f:facet>
+					<p:column headerText="#{msg['lbl.gestionar']}">
+						<p:tooltip for="btnEditar" value="#{msg['lbl.editar']}" />
+						<p:tooltip for="btnEliminar"
+							value="#{vehiculo.activo eq true ? msg['lbl.desactivar']: msg['lbl.activar']}" />
+						<p:commandButton id="btnEditar" update=":mensaje, :formEditar"
+							action="#{vehiculoBean.cargarEditar}"
+							oncomplete="mostarPanelEditar('')" icon="#{msg['i.editar']}">
+							<f:setPropertyActionListener value="#{vehiculo}"
+								target="#{vehiculoBean.vehiculo}" />
+						</p:commandButton>
+
+						<p:commandButton id="btnEliminar" update=":mensaje, :formEliminar"
+							oncomplete="mostarPanelEliminar('')"
+							icon="#{vehiculo.activo eq true ? msg['i.eliminar']: msg['i.activar']}">
+							<f:setPropertyActionListener value="#{vehiculo}"
+								target="#{vehiculoBean.vehiculo}" />
+						</p:commandButton>
+					</p:column>
+					<p:column headerText="Cod.">
+						<p:outputLabel value="#{vehiculo.id}" />
+					</p:column>
+					<p:column headerText="Placa">
+						<p:outputLabel value="#{vehiculo.placa}" />
+					</p:column>
+					<p:column headerText="Marca">
+						<p:outputLabel value="#{vehiculo.marca}" />
+					</p:column>
+					<p:column headerText="Modelo">
+						<p:outputLabel value="#{vehiculo.modelo}" />
+					</p:column>
+					<p:column headerText="Color">
+						<p:outputLabel value="#{vehiculo.color}" />
+					</p:column>
+					<p:column headerText="Tipo">
+						<p:outputLabel value="#{vehiculo.tipo}" />
+					</p:column>
+				</p:dataTable>
+			</h:form>
+		</p:panel>
+
+
+		<p:panel id="panelInsertar" header="#{msg['lbl.insertar']}"
+			styleClass="DispNone">
+			<h:form id="formNuevo">
+				<p:outputLabel value="Los campos marcados con * son Obligatorios"
+					styleClass="DispBlock" />
+				<div class="divDatosIzq50">
+					<div id="datosvehiculo" class="divDatosIzq50">
+						<p:outputLabel value="Datos vehiculo" styleClass="subTitulos" />
+						<p:outputLabel value="* Placa" for="placa" styleClass="DispBlock" />
+						<p:inputText id="placa" value="#{vehiculoBean.vehiculo.placa}"
+							styleClass="DispBlock Wid90">
+							<p:ajax event="blur" listener="#{vehiculoBean.comprobarVehiculo}"
+								update="formNuevo,:mensaje" />
+						</p:inputText>
+						<p:outputLabel value="* Color" for="color" styleClass="DispBlock" />
+						<p:inputText id="color" value="#{vehiculoBean.vehiculo.color}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
+						<p:outputLabel value="* Marca" for="marca" styleClass="DispBlock" />
+						<p:inputText id="marca" value="#{vehiculoBean.vehiculo.marca}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
+						<p:outputLabel value="Modelo" for="modelo" styleClass="DispBlock" />
+						<p:inputText id="modelo" rows="2"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{vehiculoBean.vehiculo.modelo}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Tipo de Vehiculo" for="tipo"
+							styleClass="DispBlock" />
+						<p:inputText id="tipo"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{vehiculoBean.vehiculo.tipo}"
+							styleClass="DispBlock Wid90" />
+					</div>
+				</div>
+				<div class="EmptyBox10"></div>
+				<p:separator />
+				<p:commandButton value="#{msg['btn.guardar']}"
+					update=":formDataTable ,:mensaje, formNuevo"
+					oncomplete="comprobarInsertar(xhr, status, args, '')"
+					id="btnNuevoAceptar" icon="#{msg['i.guardar']}"
+					actionListener="#{vehiculoBean.insertar}" styleClass="GreenButton" />
+				<p:commandButton value="#{msg['btn.cancelar']}"
+					oncomplete="mostarPanelInsertar('')" id="btnNuevolimpiar"
+					icon="#{msg['i.cancelar']}" process="@this" styleClass="RedButton" />
+			</h:form>
+		</p:panel>
+
+		<p:panel id="panelEditar" header="#{msg['lbl.editar']}"
+			styleClass="DispNone">
+			<h:form id="formEditar">
+				<p:outputLabel value="Los campos marcados con * son Obligatorios"
+					styleClass="DispBlock" />
+				<div class="divDatosIzq50">
+					<div id="datosvehiculo" class="divDatosIzq50">
+						<p:outputLabel value="Datos vehiculo" styleClass="subTitulos" />
+						<p:outputLabel value="* Placa" for="placa" styleClass="DispBlock" />
+						<p:inputText id="placa" value="#{vehiculoBean.vehiculo.placa}"
+							styleClass="DispBlock Wid90">
+							<p:ajax event="blur" listener="#{vehiculoBean.comprobarVehiculo}"
+								update="formNuevo,:mensaje" />
+						</p:inputText>
+						<p:outputLabel value="* Color" for="color" styleClass="DispBlock" />
+						<p:inputText id="color" value="#{vehiculoBean.vehiculo.color}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
+						<p:outputLabel value="* Marca" for="marca" styleClass="DispBlock" />
+						<p:inputText id="marca" value="#{vehiculoBean.vehiculo.marca}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
+						<p:outputLabel value="Modelo" for="modelo" styleClass="DispBlock" />
+						<p:inputText id="modelo" rows="2"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{vehiculoBean.vehiculo.modelo}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Tipo de Vehiculo" for="tipo"
+							styleClass="DispBlock" />
+						<p:inputText id="tipo"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{vehiculoBean.vehiculo.tipo}"
+							styleClass="DispBlock Wid90" />
+					</div>
+				</div>
+				<div class="EmptyBox10"></div>
+				<p:separator />
+				<p:commandButton value="#{msg['btn.guardar']}"
+					update=":formDataTable ,:mensaje, formEditar"
+					oncomplete="comprobarEditar(xhr, status, args, '')"
+					id="btnNuevoAceptar" icon="#{msg['i.guardar']}"
+					actionListener="#{vehiculoBean.actualizar}"
+					styleClass="GreenButton" />
+				<p:commandButton value="#{msg['btn.cancelar']}"
+					oncomplete="mostarPanelEditar('')" id="btnNuevolimpiar"
+					icon="#{msg['i.cancelar']}" process="@this" styleClass="RedButton" />
+			</h:form>
+		</p:panel>
+		<p:panel id="panelEliminar"
+			header="#{msg['lbl.activar']}/#{msg['lbl.desactivar']}"
+			styleClass="DispNone">
+			<h:form id="formEliminar">
+				<h:inputHidden value="#{vehiculoBean.vehiculo.id}" />
+				<div class="EmptyBox30"></div>
+				<p:outputLabel
+					value="¿Desea #{vehiculoBean.vehiculo.activo eq true ? msg['lbl.desactivar'] : msg['lbl.activar']} el vehiculo: #{vehiculoBean.vehiculo.placa} - #{vehiculoBean.vehiculo.marca} #{vehiculoBean.vehiculo.modelo}?" />
+				<div class="EmptyBox30"></div>
+				<p:separator />
+				<p:commandButton value="#{msg['btn.aceptar']}"
+					update=":formDataTable,:mensaje" icon="#{msg['i.activar']}"
+					oncomplete="mostarPanelEliminar('')"
+					actionListener="#{vehiculoBean.eliminar}" styleClass="GreenButton" />
+				<p:commandButton value="#{msg['btn.cancelar']}"
+					onclick="mostarPanelEliminar('')" icon="#{msg['i.cancelar']}"
+					styleClass="RedButton" />
+			</h:form>
+		</p:panel>
+	</ui:define>
+</ui:composition>

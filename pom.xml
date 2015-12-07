@@ -111,7 +111,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.primefaces.themes</groupId>
-			<artifactId>ronin</artifactId>
+			<artifactId>ronin-theme</artifactId>
 			<version>1.0</version>
 		</dependency>
 

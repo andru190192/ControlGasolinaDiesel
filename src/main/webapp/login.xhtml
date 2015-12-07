@@ -28,45 +28,56 @@
 	<ui:insert name="head" />
 </h:head>
 
-<h:body>
+<h:body styleClass="loginbody">
+	<div class="ui-lesscurve">
+		<form action='${loginUrl}' method='post'>
+			<div
+				class="Wid25 MarAuto DispBlock OvHidden Responsive100 ui-lesscurve"
+				style="margin-top: 7%;">
+				<div class="ContainerIndent">
+					<div class="Wid90 MarAuto">
+						<div
+							class="ShadowBox whiteback TexAlCenter RedBorderedBox BordRad15">
+							<div class="Wid100 TexAlCenter">
+								<h:graphicImage name="imagenes/logo.png" library="ronin-layout"
+									style="width:80%;" />
+							</div>
 
-	<div id="layout-portlets-cover">
-		<div
-			class="other-pages-box Container40 Responsive50 MarAuto Fnone TexAlCenter ShadowGray MarTop10"
-			style="margin-top: 5%; background-image: url(/tesisControlGasolina/resources/ronin-layout/imagenes/loginpageillust.svg); background-repeat: no-repeat; background-position: center; background-size: cover;">
-			<div class="Container90 Fnone MarAuto TexAlCenter">
-				<form action='${loginUrl}' method='post' class="login-form">
-					<div class="EmptyBox20"></div>
-					<h:graphicImage name="imagenes/logo.svg" library="ronin-layout"
-						styleClass="Container20 Fnone MarAuto MarTop20 MarBot10" />
-					<h1>ESCUELA DE EDUCACION BASICA MARISCAL SUCRE</h1>
-					<div class="EmptyBox20"></div>
-					<p:inputText id="username" value="" placeholder="Usuario"
-						styleClass="TextAlCenter Container80 Fnone MarAuto Fs18"
-						style="text-align:center" />
-					<div class="EmptyBox10"></div>
-					<p:password id="password" value="" placeholder="Contraseña"
-						styleClass="TextAlCenter Container80 Fnone MarAuto Fs18"
-						feedback="false" style="text-align:center" />
-					<input type="hidden" name="${_csrf.parameterName}"
-						value="${_csrf.token}" />
-					<div class="Seperator"></div>
-					<p:commandButton value="Ingresar"
-						styleClass="Container80 Fnone MarAuto Fs16"
-						onclick="clickIngresar()" />
-					<button id="btnSubmit" type="submit" name="submit"
-						style="display: none;" />
-					<div class="EmptyBox10"></div>
-				</form>
+							<div class="Wid100 OvHidden BigTopic FontDosisSemiBold Fs40">
+								<i class="fa fa-key"></i> Inicio de Sesion
+							</div>
+							<div class="EmptyBox20"></div>
+							<p:inputText id="username" value="" placeholder="Usuario"
+								styleClass="TextAlCenter Container80 Fnone MarAuto Fs18"
+								style="text-align:center" />
+							<div class="EmptyBox10"></div>
+							<p:password id="password" value="" placeholder="Contraseña"
+								styleClass="TextAlCenter Container80 Fnone MarAuto Fs18"
+								feedback="false" style="text-align:center" />
+							<input type="hidden" name="${_csrf.parameterName}"
+								value="${_csrf.token}" />
+							<div class="Seperator"></div>
+							<p:commandButton value="Ingresar"
+								styleClass="Container80 Fnone MarAuto Fs16"
+								onclick="clickIngresar()" />
+							<button id="btnSubmit" type="submit" name="submit"
+								style="display: none;" />
+							<div class="EmptyBox10"></div>
+						</div>
+						<div
+							class="Wid100 TexAlCenter MarTop20 softgray Fs14 FontDosisRegular">
+							<i class="fa fa-copyright"></i> Paulina Garcia <br /> Todos los
+							derechos reservados.
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+		</form>
 	</div>
-
 	<h:outputStylesheet name="css/core-layout.css" library="ronin-layout" />
 	<h:outputStylesheet name="css/font-awesome.css" library="ronin-layout" />
 	<h:outputStylesheet name="css/animate.css" library="ronin-layout" />
 	<h:outputStylesheet name="css/ronin-layout.css" library="ronin-layout" />
 	<h:outputStylesheet name="css/estilos.css" library="ronin-layout" />
 </h:body>
-
 </html>

@@ -41,16 +41,16 @@ public class ChoferServiceImpl implements ChoferService, Serializable {
 
 	public boolean actualizar(Chofer chofer) {
 		boolean retorno = false;
-
-		Set<ConstraintViolation<Chofer>> violations = validator.validate(chofer);
-		if (violations.size() > 0)
-			for (ConstraintViolation<Chofer> cv : violations)
+		Set<ConstraintViolation<Chofer>> violationsChofer = validator.validate(chofer);
+		if (violationsChofer.size() > 0)
+			for (ConstraintViolation<Chofer> cv : violationsChofer)
 				presentaMensaje(FacesMessage.SEVERITY_INFO, cv.getMessage());
 		else if (choferDao.comprobarIndices(Chofer.class, "cedula", chofer.getCedula(), String.valueOf(chofer.getId())))
 			presentaMensaje(FacesMessage.SEVERITY_INFO, "LA CÉDULA YA EXISTE", "cerrar", false);
 		else {
 			chofer.setPassword(generarClave(chofer.getCedula()));
 			choferDao.actualizar(chofer);
+			presentaMensaje(FacesMessage.SEVERITY_INFO, "CHOFER ACTUALIZADO", "cerrar", true);
 			retorno = true;
 		}
 		return retorno;
@@ -113,15 +113,32 @@ public class ChoferServiceImpl implements ChoferService, Serializable {
 		return shaPasswordEncoder.encodePassword(clave, null);
 	}
 
-	public boolean insertar(Chofer chofer) {
-		boolean retorno = false;
-
+	public Chofer insertarActualizar(Chofer chofer) {
 		Set<ConstraintViolation<Chofer>> violationsChofer = validator.validate(chofer);
 		if (violationsChofer.size() > 0)
 			for (ConstraintViolation<Chofer> cv : violationsChofer)
 				presentaMensaje(FacesMessage.SEVERITY_INFO, cv.getMessage());
+		else {
+			boolean retorno = false;
+			if (chofer.getId() == null)
+				retorno = insertar(chofer);
+			else
+				retorno = actualizar(chofer);
 
-		else if (choferDao.comprobarIndices(Chofer.class, "cedula", chofer.getCedula(), String.valueOf(chofer.getId())))
+			if (retorno) {
+				List<String> roles = new ArrayList<String>();
+				roles.add("INVITADO");
+				insertarRoles(chofer, roles);
+				presentaMensaje(FacesMessage.SEVERITY_INFO, "CHOFER INSERTADO CORRECTAMENTE", "cerrar", true);
+			}
+		}
+		return chofer;
+
+	}
+
+	public boolean insertar(Chofer chofer) {
+		boolean retorno = false;
+		if (choferDao.comprobarIndices(Chofer.class, "cedula", chofer.getCedula(), String.valueOf(chofer.getId())))
 			presentaMensaje(FacesMessage.SEVERITY_INFO, "LA CÉDULA YA EXISTE", "cerrar", false);
 		else {
 			chofer.setActivo(true);
@@ -190,7 +207,7 @@ public class ChoferServiceImpl implements ChoferService, Serializable {
 				if (criterioBusquedaChofer.compareToIgnoreCase("") != 0)
 					lista = choferDao.obtenerPorHql(
 							"select distinct c from Chofer c "
-									+ "where (c.cedula like ?1 or c.nombre like ?1 or c.apellido like ?1 c.licencia like ?1 ) "
+									+ "where (c.cedula like ?1 or c.nombre like ?1 or c.apellido like ?1 or c.licencia like ?1 ) "
 									+ "order by c.apellido, c.nombre",
 							new Object[] { "%" + criterioBusquedaChofer + "%" });
 				if (lista.isEmpty())

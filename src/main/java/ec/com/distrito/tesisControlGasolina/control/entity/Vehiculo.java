@@ -70,8 +70,8 @@ public class Vehiculo implements Serializable {
 		return id;
 	}
 
-	@Pattern(regexp = "[A-Za-z ñÑ]{3,5000}", message = "EL CAMPO PLACA ACEPTA MINIMO 3 LETRAS ")
-	@Column(nullable = false, length = 5000)
+	@Pattern(regexp = "[A-Za-z0-9 ñÑ]{6,10}", message = "EL CAMPO PLACA ACEPTA MINIMO 6 CARACTERES ALFANUMERICOS ")
+	@Column(nullable = false, length = 10)
 	public String getPlaca() {
 		return this.placa;
 	}

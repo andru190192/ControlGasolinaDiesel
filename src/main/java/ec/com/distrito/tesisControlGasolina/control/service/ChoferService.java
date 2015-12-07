@@ -32,6 +32,9 @@ public interface ChoferService {
 	public boolean insertar(Chofer chofer);
 
 	@Transactional
+	public Chofer insertarActualizar(Chofer chofer);
+
+	@Transactional
 	public String insertarRoles(Chofer chofer, List<String> roles);
 
 	@Transactional

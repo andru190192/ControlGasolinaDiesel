@@ -4,33 +4,25 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 
-
-	<div id="layout-topbar" class="ShadowGray">
-		<div id="layout-topbar-indent">
-			<a href="/tesisMatriculacion/views/home.jsf"><h:graphicImage
-					name="images/banner.png" styleClass="Fleft" library="spark-layout"
-					id="logo" class="Fleft" /></a> <a href="#" id="mobile-menu-button"
-				class="BordRad3 white ShowOnMobile"><i class="fa fa-bars"></i>
-				Menú</a> <a href="#" id="mobile-menu-button-gray"
-				class="BordRad3 white ShowOnMobile"><i class="fa fa-caret-down"></i>
-				Top Menú</a>
-
-			<ul id="layout-topbar-menu">
-				<li><a href="/tesisMatriculacion/logout.jsf" class="Animated05"><i
-						class="fa fa-sign-out"></i> Salir</a></li>
-				<li class="fa fa-ellipsis-v menu-separator"></li>
-				<li><a class="Animated05 CursPointer"><i class="fa fa-user"></i>
-						Bienvenid@: <h:outputText value="#{menuBean.nombreUsuario}" /> <i
-						class="fa fa-chevron-down Fs14 Fright ShowOnMobile"></i></a>
-					<ul style="width: 200px; margin-left: -10px;"
-						class="Animated03 submenu">
-						<li><a
-							href="/tesisMatriculacion/views/seguridad/cambiarClave.jsf"
-							class="Animated05"><i class="fa fa-key"></i> Cambiar
-								Contraseña</a></li>
-					</ul></li>
-			</ul>
-		</div>
+	<div id="layout-topbar">
+		<a href="#" id="logo" class="ClearBoth DispBlock"> <h:graphicImage
+				name="imagenes/logo.png" styleClass="ShowOnDesktop Wid100"
+				library="ronin-layout" /> <span
+			class="ShowOnMobile red Fs30 FontDosisSemiBold">Distrito</span>
+			<p class="white ShowOnDesktop">BIENVENIDO</p>
+			<p class="white">#{menuBean.nombreUsuario}</p>
+		</a>
+		<!-- mobile menu open button start -->
+		<a id="mobile-menu-button" class="Animated03 CursPointer ShowOnMobile">
+			<i class="fa fa-bars" /> Menu
+		</a> <span id="topbar-link-cover"> <a
+			href="/tesisControlGasolina/views/seguridad/cambiarClave.jsf"
+			class="topbar-link Animated03"><i class="fa fa-key"></i></a> <a
+			href="/tesisControlGasolina/logout.jsf"
+			class="topbar-link red Animated03"><i
+				class="fa fa-sign-out animated infinite swing"></i></a>
+		</span>
+		<div class="EmptyBox20 ShowOnDesktop"></div>
 	</div>
 
 </ui:composition>

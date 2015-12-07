@@ -76,7 +76,7 @@ public class ControlGasto implements Serializable {
 	}
 
 	@OneToOne
-	@JoinColumn(name = "choferidid", nullable = false)
+	@JoinColumn(name = "choferid", nullable = false)
 	public Chofer getChofer() {
 		return this.chofer;
 	}
@@ -87,7 +87,7 @@ public class ControlGasto implements Serializable {
 		return this.vehiculo;
 	}
 
-	@Pattern(regexp = "[A-Za-z ñÑ]{3,500P}", message = "EL CAMPO RECORRIDO ACEPTA MINIMO 3 LETRAS ")
+	@Pattern(regexp = "[A-Za-z ñÑ]{3,500}", message = "EL CAMPO RECORRIDO ACEPTA MINIMO 3 LETRAS ")
 	@Column(nullable = false, length = 5000)
 	public String getRecorrido() {
 		return this.recorrido;
