@@ -14,7 +14,7 @@
 				<h:panelGrid columns="3" cellpadding="1">
 					<p:outputLabel value="Usuario" styleClass="negrita" />
 					<p:inputText readonly="true"
-						value="#{bitacoraBean.persona.cedula} - #{bitacoraBean.persona.apellido} #{bitacoraBean.persona.nombre}"
+						value="#{bitacoraBean.chofer.cedula} - #{bitacoraBean.chofer.apellido} #{bitacoraBean.chofer.nombre}"
 						styleClass="w445px" />
 					<p:commandButton oncomplete="PF('buscarUsuario').show()"
 						icon="#{msg['i.buscar']}" />
@@ -29,7 +29,7 @@
 					value="#{bitacoraBean.listaBitacora}" reflow="true"
 					emptyMessage="#{msg['lbl.mensajeTabla']}">
 					<p:column headerText="Usuario" styleClass="centrar">  
-            			#{bitacora.persona.apellido} #{bitacora.persona.nombre} 
+            			#{bitacora.chofer.apellido} #{bitacora.chofer.nombre} 
         			</p:column>
 					<p:column headerText="Fecha" styleClass="centrar">
 						<h:outputText value="#{bitacora.fecha}">
@@ -53,20 +53,20 @@
 					<p:commandButton update="comboCedula,tablaUsuarios,:mensajes"
 						icon="#{msg['i.buscar']}"
 						actionListener="#{bitacoraBean.buscarUsuario}" />
-					<p:dataTable id="tablaUsuarios" var="persona" reflow="true"
-						value="#{bitacoraBean.listaPersonas}" paginator="true" rows="5"
+					<p:dataTable id="tablaUsuarios" var="chofer" reflow="true"
+						value="#{bitacoraBean.listachoferes}" paginator="true" rows="5"
 						emptyMessage="#{msg['lbl.mensajeTabla']}"
-						paginatorPosition="bottom" rowKey="#{persona.id}"
-						selection="#{bitacoraBean.persona}" selectionMode="single">
+						paginatorPosition="bottom" rowKey="#{chofer.id}"
+						selection="#{bitacoraBean.chofer}" selectionMode="single">
 						<p:ajax event="rowSelect" update=":formDataTable"
 							listener="#{bitacoraBean.cargarUsuario}"
 							oncomplete="PF('buscarUsuario').hide()" />
 						<p:column headerText="Cedula"
 							styleClass="text-align:center;width: 100px;">
-							 	#{persona.cedula}
+							 	#{chofer.cedula}
 						</p:column>
 						<p:column headerText="Nombres" styleClass="centrar w350px">
-							 	#{persona.apellido} #{persona.nombre}
+							 	#{chofer.apellido} #{chofer.nombre}
 						</p:column>
 					</p:dataTable>
 				</h:form>

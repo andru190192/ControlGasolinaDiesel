@@ -18,19 +18,19 @@ public class BitacoraServiceImpl implements BitacoraService, Serializable {
 	@Autowired
 	private BitacoraDao bitacoraDao;
 
-	public List<Bitacora> obtener(Integer personaId, Date fechaInicio) {
+	public List<Bitacora> obtener(Integer choferId, Date fechaInicio) {
 		List<Bitacora> lista = null;
 
-		if (personaId == null || personaId == 0)
+		if (choferId == null || choferId == 0)
 			lista = bitacoraDao.obtenerPorHql(
-					"select b from Bitacora b " + "inner join b.persona p " + "where b.fecha>=?1 and b.fecha<=?2 "
+					"select b from Bitacora b " + "inner join b.chofer c " + "where b.fecha>=?1 and b.fecha<=?2 "
 							+ "order by b.fecha desc",
 					new Object[] { fechaInicio, new Date(fechaInicio.getTime() + 86399999) });
 		else
 			lista = bitacoraDao.obtenerPorHql(
-					"select b from Bitacora b " + "inner join b.persona p "
-							+ "where p.id=?1 and b.fecha>=?2 and b.fecha<=?3 " + "order by b.fecha desc",
-					new Object[] { personaId, fechaInicio, new Date(fechaInicio.getTime() + 86399999) });
+					"select b from Bitacora b " + "inner join b.chofer c "
+							+ "where c.id=?1 and b.fecha>=?2 and b.fecha<=?3 " + "order by b.fecha desc",
+					new Object[] { choferId, fechaInicio, new Date(fechaInicio.getTime() + 86399999) });
 
 		return lista;
 	}

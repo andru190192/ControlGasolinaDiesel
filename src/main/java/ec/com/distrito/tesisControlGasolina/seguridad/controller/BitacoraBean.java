@@ -29,27 +29,27 @@ public class BitacoraBean implements Serializable {
 	@Autowired
 	ChoferService choferService;
 
-	private Chofer persona;
+	private Chofer chofer;
 	private String criterio;
 	private Date fechaInicio;
 
 	List<Bitacora> listaBitacora;
-	List<Chofer> listaPersonas;
+	List<Chofer> listachoferes;
 
 	public BitacoraBean() {
 	}
 
 	public void buscarUsuario() {
-		listaPersonas = choferService.obtenerTodosPorBusqueda(criterio);
+		listachoferes = choferService.obtenerTodosPorBusqueda(criterio);
 	}
 
 	public void cargarUsuario(SelectEvent event) {
-		persona = choferService.obtenerPorChoferId(persona.getId());
+		chofer = choferService.obtenerPorChoferId(chofer.getId());
 	}
 
 	public void consultar() {
 		listaBitacora = new ArrayList<Bitacora>();
-		listaBitacora = bitacoraService.obtener(persona.getId(), fechaInicio);
+		listaBitacora = bitacoraService.obtener(chofer.getId(), fechaInicio);
 	}
 
 	public String getCriterio() {
@@ -64,17 +64,17 @@ public class BitacoraBean implements Serializable {
 		return listaBitacora;
 	}
 
-	public List<Chofer> getListaPersonas() {
-		return listaPersonas;
+	public List<Chofer> getListachoferes() {
+		return listachoferes;
 	}
 
-	public Chofer getPersona() {
-		return persona;
+	public Chofer getchofer() {
+		return chofer;
 	}
 
 	@PostConstruct
 	public void init() {
-		persona = new Chofer();
+		chofer = new Chofer();
 		fechaInicio = new Date();
 	}
 
@@ -90,12 +90,12 @@ public class BitacoraBean implements Serializable {
 		this.listaBitacora = listaBitacora;
 	}
 
-	public void setListaPersonas(List<Chofer> listaPersonas) {
-		this.listaPersonas = listaPersonas;
+	public void setListachoferes(List<Chofer> listachoferes) {
+		this.listachoferes = listachoferes;
 	}
 
-	public void setPersona(Chofer persona) {
-		this.persona = persona;
+	public void setchofer(Chofer chofer) {
+		this.chofer = chofer;
 	}
 
 }
