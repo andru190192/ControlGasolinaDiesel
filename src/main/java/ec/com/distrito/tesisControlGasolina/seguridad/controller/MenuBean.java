@@ -102,9 +102,6 @@ public class MenuBean implements Serializable {
 				.obtenerActivoPorCedula(SecurityContextHolder.getContext().getAuthentication().getName());
 		setNombreUsuario(p.getNombre() + " " + p.getApellido());
 		cargarMenu();
-		String claveActual = choferService.generarClave(p.getCedula());
-		if (claveActual.compareTo(p.getPassword()) == 0)
-			redireccionar("/negosys/views/seguridad/cambiarClaveNueva.jsf");
 	}
 
 	public void cargarSistema() {
