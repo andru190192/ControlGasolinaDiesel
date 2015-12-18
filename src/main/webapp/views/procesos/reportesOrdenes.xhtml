@@ -19,8 +19,7 @@
 				<p:commandButton update="busquedaTabla, :formDataTable, :mensaje"
 					icon="#{msg['i.buscar']}" value="#{msg['btn.buscar']}"
 					actionListener="#{reporteOrdenBean.obtenerOrdenes}" />
-				<p:commandButton ajax="false" icon="#{msg['i.buscar']}"
-					value="#{msg['btn.buscar']}"
+				<p:commandButton ajax="false" icon="fa-print" value="Imprimir"
 					actionListener="#{reporteOrdenBean.imprimir}" />
 				<div class="EmptyBox10"></div>
 			</h:form>
@@ -58,13 +57,13 @@
 					<p:column headerText="Recorrido">
 						<p:outputLabel value="#{orden.recorrido}" />
 					</p:column>
-					<p:column headerText="Fecha">
-						<p:outputLabel value="#{orden.fecha}" />
-					</p:column>
 					<p:column headerText="valor">
 						<p:outputLabel value="#{orden.valor}" />
 					</p:column>
-
+					<p:column headerText="Fecha">
+						<p:outputLabel value="#{orden.fecha}" />
+					</p:column>
+					
 					<p:columnGroup type="footer">
 						<p:row>
 							<p:column colspan="6" footerText="TOTAL:" />
