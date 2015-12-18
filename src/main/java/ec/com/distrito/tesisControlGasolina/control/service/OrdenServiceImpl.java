@@ -111,4 +111,22 @@ public class OrdenServiceImpl implements OrdenService, Serializable {
 		return lista;
 	}
 
+	public List<ControlGasto> obtenerPorBusquedaDeFechas(Date fechaInicio, Date fechaFin) {
+		List<ControlGasto> lista = null;
+		if (fechaInicio == null && fechaFin == null)
+			presentaMensaje(FacesMessage.SEVERITY_ERROR, "INGRESE UN RANGO DE FECHAS");
+		else {
+			if (fechaInicio != null && fechaFin != null)
+				lista = controlGastoDao.obtenerPorHql(
+						"select distinct cg from ControlGasto cg " + "inner join cg.vehiculo ve "
+								+ "inner join cg.chofer ch " + "where cg.fecha>=?1 and cg.fecha<=?2 "
+								+ "order by cg.fecha",
+						new Object[] { new Timestamp(fechaInicio.getTime()),
+								new Timestamp(fechaFin.getTime() + 86399999) });
+			if (lista.isEmpty())
+				presentaMensaje(FacesMessage.SEVERITY_INFO, "NO SE ENCONTRO NINGUNA COINCIDENCIA");
+		}
+		return lista;
+	}
+
 }

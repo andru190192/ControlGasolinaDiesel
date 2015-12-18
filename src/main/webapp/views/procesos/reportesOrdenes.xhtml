@@ -1,0 +1,230 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" template="/WEB-INF/template.xhtml">
+
+	<ui:define name="title">-Reporte Ordenes</ui:define>
+
+	<ui:define name="content">
+		<p:panel id="panelPrincipal" header="Reporte de Ordenes">
+			<h:form id="busquedaTabla">
+				<p:outputLabel value="Fecha Inicio" styleClass="DispBlock"
+					for="fechaInicio" />
+				<p:calendar id="fechaInicio" value="#{reporteOrdenBean.fechaInicio}" />
+				<p:outputLabel value="Fecha Desde" for="fechaDesde"
+					styleClass="DispBlock" />
+				<p:calendar id="fechaDesde" value="#{reporteOrdenBean.fechaFin}" />
+				<div class="EmptyBox10"></div>
+				<p:commandButton update="busquedaTabla, :formDataTable, :mensaje"
+					icon="#{msg['i.buscar']}" value="#{msg['btn.buscar']}"
+					actionListener="#{reporteOrdenBean.obtenerOrdenes}" />
+				<p:commandButton ajax="false" icon="#{msg['i.buscar']}"
+					value="#{msg['btn.buscar']}"
+					actionListener="#{reporteOrdenBean.imprimir}" />
+				<div class="EmptyBox10"></div>
+			</h:form>
+			<h:form id="formDataTable">
+				<p:dataTable id="tablaChoferes" var="orden" scrollable="true"
+					reflow="true" value="#{reporteOrdenBean.listaOrdenes}"
+					paginator="true" rows="10"
+					paginatorTemplate="{RowsPerPageDropdown} {FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+					paginatorPosition="bottom"
+					rowStyleClass="#{orden.activo eq true ? null:'desactivo'}"
+					emptyMessage="#{msg['lbl.mensajeTabla']}">
+					<f:facet name="header">
+						<p:tooltip for="btnNuevo" value="#{msg['lbl.insertar']}" />
+						<p:commandButton oncomplete="mostarPanelInsertar('')"
+							update=":formNuevo" action="#{reporteOrdenBean.cargarInsertar}"
+							id="btnNuevo" icon="#{msg['i.nuevo']}" />
+					</f:facet>
+					<p:column headerText="#{msg['lbl.gestionar']}">
+						<p:tooltip for="btnImprimir" value="Imprimir" />
+						<p:commandButton id="btnImprimir" update=":mensaje" ajax="false"
+							action="#{reporteOrdenBean.imprimir}" icon="#{msg['i.editar']}">
+							<f:setPropertyActionListener value="#{orden}"
+								target="#{reporteOrdenBean.orden}" />
+						</p:commandButton>
+					</p:column>
+					<p:column headerText="Cod.">
+						<p:outputLabel value="#{orden.id}" />
+					</p:column>
+					<p:column headerText="Chofer">
+						<p:outputLabel value="#{orden.chofer.apellido}" />
+					</p:column>
+					<p:column headerText="vehiculo">
+						<p:outputLabel value="#{orden.vehiculo.placa}" />
+					</p:column>
+					<p:column headerText="Recorrido">
+						<p:outputLabel value="#{orden.recorrido}" />
+					</p:column>
+					<p:column headerText="Fecha">
+						<p:outputLabel value="#{orden.fecha}" />
+					</p:column>
+					<p:column headerText="valor">
+						<p:outputLabel value="#{orden.valor}" />
+					</p:column>
+
+					<p:columnGroup type="footer">
+						<p:row>
+							<p:column colspan="6" footerText="TOTAL:" />
+							<p:column footerText="#{reporteOrdenBean.total}" />
+						</p:row>
+					</p:columnGroup>
+				</p:dataTable>
+			</h:form>
+		</p:panel>
+
+		<p:panel id="panelInsertar" header="#{msg['lbl.insertar']}"
+			styleClass="DispNone">
+			<h:form id="formNuevo">
+				<p:outputLabel value="Los campos marcados con * son Obligatorios"
+					styleClass="DispBlock" />
+				<div class="divDatosIzq50">
+					<div id="datosOrden" class="divDatosIzq50">
+						<p:outputLabel value="Datos de la Orden" styleClass="subTitulos" />
+						<p:outputLabel value="* Chofer" for="autoCompletarChoferOrden"
+							styleClass="DispBlock" />
+						<p:autoComplete id="autoCompletarChoferOrden" scrollHeight="200"
+							effect="drop" placeholder="MINIMO 3 CARACTERES"
+							emptyMessage="NO HAY DATOS A MOSTRAR" minQueryLength="3"
+							maxResults="20" value="#{reporteOrdenBean.choferOrden}"
+							completeMethod="#{reporteOrdenBean.obtenerChoferOrdenPorBusqueda}"
+							styleClass="DispBlock Wid90 autoCompletar">
+							<p:ajax event="itemSelect" id="prueba"
+								listener="#{reporteOrdenBean.cargarChoferOrden}"
+								update="autoCompletarChoferOrden, :mensaje" />
+						</p:autoComplete>
+						<p:outputLabel value="* Recorrido" for="recorrido"
+							styleClass="DispBlock" />
+						<p:inputText id="recorrido"
+							value="#{reporteOrdenBean.orden.recorrido}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
+						<p:outputLabel value="* Vehiculo" for="autoCompletarVehiculoOrden"
+							styleClass="DispBlock" />
+						<p:autoComplete id="autoCompletarVehiculoOrden" scrollHeight="200"
+							effect="drop" placeholder="MINIMO 3 CARACTERES"
+							emptyMessage="NO HAY DATOS A MOSTRAR" minQueryLength="3"
+							maxResults="20" value="#{reporteOrdenBean.vehiculoOrden}"
+							completeMethod="#{reporteOrdenBean.obtenerVehiculoOrdenPorBusqueda}"
+							styleClass="DispBlock Wid90 autoCompletar">
+							<p:ajax event="itemSelect" id="prueba"
+								listener="#{reporteOrdenBean.cargarVehiculoOrden}"
+								update="autoCompletarVehiculoOrden,placa, :mensaje" />
+						</p:autoComplete>
+						<p:outputLabel value="Placa" for="placa" styleClass="DispBlock" />
+						<p:inputText id="placa" readonly="true"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{reporteOrdenBean.orden.vehiculo.placa}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Valor" for="valor" styleClass="DispBlock" />
+						<p:inputText id="valor"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{reporteOrdenBean.orden.valor}"
+							styleClass="DispBlock Wid90" />
+					</div>
+				</div>
+				<div class="EmptyBox10"></div>
+				<p:separator />
+				<p:commandButton value="#{msg['btn.guardar']}"
+					update=":formDataTable ,:mensaje, formNuevo"
+					oncomplete="comprobarInsertar(xhr, status, args, '')"
+					id="btnNuevoAceptar" icon="#{msg['i.guardar']}"
+					actionListener="#{reporteOrdenBean.insertar}"
+					styleClass="GreenButton" />
+				<p:commandButton value="#{msg['btn.cancelar']}"
+					oncomplete="mostarPanelInsertar('')" id="btnNuevolimpiar"
+					icon="#{msg['i.cancelar']}" process="@this" styleClass="RedButton" />
+			</h:form>
+		</p:panel>
+
+		<p:panel id="panelEditar" header="#{msg['lbl.editar']}"
+			styleClass="DispNone">
+			<h:form id="formEditar">
+				<p:outputLabel value="Los campos marcados con * son Obligatorios"
+					styleClass="DispBlock" />
+				<div class="divDatosIzq50">
+					<div id="datosChofer" class="divDatosIzq50">
+						<p:outputLabel value="Datos de la Orden" styleClass="subTitulos" />
+						<p:outputLabel value="* Chofer" for="autoCompletarChoferOrden"
+							styleClass="DispBlock" />
+						<p:autoComplete id="autoCompletarChoferOrden" scrollHeight="200"
+							effect="drop" placeholder="MINIMO 3 CARACTERES"
+							emptyMessage="NO HAY DATOS A MOSTRAR" minQueryLength="3"
+							maxResults="20" value="#{reporteOrdenBean.choferOrden}"
+							completeMethod="#{reporteOrdenBean.obtenerChoferOrdenPorBusqueda}"
+							styleClass="DispBlock Wid90 autoCompletar">
+							<p:ajax event="itemSelect" id="prueba"
+								listener="#{reporteOrdenBean.cargarChoferOrden}"
+								update="autoCompletarChoferOrden, :mensaje" />
+						</p:autoComplete>
+						<p:outputLabel value="* Recorrido" for="recorrido"
+							styleClass="DispBlock" />
+						<p:inputText id="recorrido"
+							value="#{reporteOrdenBean.orden.recorrido}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
+						<p:outputLabel value="* Vehiculo" for="autoCompletarVehiculoOrden"
+							styleClass="DispBlock" />
+						<p:autoComplete id="autoCompletarVehiculoOrden" scrollHeight="200"
+							effect="drop" placeholder="MINIMO 3 CARACTERES"
+							emptyMessage="NO HAY DATOS A MOSTRAR" minQueryLength="3"
+							maxResults="20" value="#{reporteOrdenBean.vehiculoOrden}"
+							completeMethod="#{reporteOrdenBean.obtenerVehiculoOrdenPorBusqueda}"
+							styleClass="DispBlock Wid90 autoCompletar">
+							<p:ajax event="itemSelect" id="prueba"
+								listener="#{reporteOrdenBean.cargarVehiculoOrden}"
+								update="autoCompletarVehiculoOrden,placa, :mensaje" />
+						</p:autoComplete>
+						<p:outputLabel value="Placa" for="placa" styleClass="DispBlock" />
+						<p:inputText id="placa"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{reporteOrdenBean.vehiculo.placa}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Valor" for="valor" styleClass="DispBlock" />
+						<p:inputText id="valor"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{reporteOrdenBean.orden.valor}"
+							styleClass="DispBlock Wid90" />
+					</div>
+				</div>
+				<div class="EmptyBox10"></div>
+				<p:separator />
+				<p:commandButton value="#{msg['btn.guardar']}"
+					update=":formDataTable ,:mensaje, formEditar"
+					oncomplete="comprobarEditar(xhr, status, args, '')"
+					id="btnNuevoAceptar" icon="#{msg['i.guardar']}"
+					actionListener="#{reporteOrdenBean.actualizar}"
+					styleClass="GreenButton" />
+				<p:commandButton value="#{msg['btn.cancelar']}"
+					oncomplete="mostarPanelEditar('')" id="btnNuevolimpiar"
+					icon="#{msg['i.cancelar']}" process="@this" styleClass="RedButton" />
+			</h:form>
+		</p:panel>
+
+		<p:panel id="panelEliminar"
+			header="#{msg['lbl.activar']}/#{msg['lbl.desactivar']}"
+			styleClass="DispNone">
+			<h:form id="formEliminar">
+				<h:inputHidden value="#{reporteOrdenBean.orden.id}" />
+				<div class="EmptyBox30"></div>
+				<p:outputLabel
+					value="¿Desea #{reporteOrdenBean.orden.activo eq true ? msg['lbl.desactivar'] : msg['lbl.activar']} el Chofer: #{reporteOrdenBean.chofer.cedula} - #{reporteOrdenBean.chofer.apellido} #{reporteOrdenBean.chofer.nombre} - #{reporteOrdenBean.vehiculo.placa} #{reporteOrdenBean.vehiculo.marca}?" />
+				<div class="EmptyBox30"></div>
+				<p:separator />
+				<p:commandButton value="#{msg['btn.aceptar']}"
+					update=":formDataTable,:mensaje" icon="#{msg['i.activar']}"
+					oncomplete="mostarPanelEliminar('')"
+					actionListener="#{reporteOrdenBean.eliminar}"
+					styleClass="GreenButton" />
+				<p:commandButton value="#{msg['btn.cancelar']}"
+					onclick="mostarPanelEliminar('')" icon="#{msg['i.cancelar']}"
+					styleClass="RedButton" />
+			</h:form>
+		</p:panel>
+
+	</ui:define>
+</ui:composition>
