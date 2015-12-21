@@ -126,7 +126,7 @@
 							styleClass="DispBlock Wid90 autoCompletar">
 							<p:ajax event="itemSelect" id="prueba"
 								listener="#{ordenBean.cargarVehiculoOrden}"
-								update="autoCompletarVehiculoOrden,placa,tipoCombustible, :mensaje" />
+								update="autoCompletarVehiculoOrden,placa,tipoCombustible,km, :mensaje" />
 						</p:autoComplete>
 						<p:outputLabel value="Placa" for="placa" styleClass="DispBlock" />
 						<p:inputText id="placa" readonly="true"
@@ -138,6 +138,12 @@
 						<p:inputText id="tipoCombustible" readonly="true"
 							onblur="this.value = this.value.toUpperCase()"
 							value="#{ordenBean.orden.vehiculo.tipoCombustible}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Kilometraje" for="tipoCombustible"
+							styleClass="DispBlock" />
+						<p:inputText id="km" readonly="true"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{ordenBean.orden.vehiculo.kilometraje}"
 							styleClass="DispBlock Wid90" />
 						<p:outputLabel value="Valor" for="valor" styleClass="DispBlock" />
 						<p:inputText id="valor"

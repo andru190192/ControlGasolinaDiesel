@@ -19,7 +19,7 @@
 				<p:commandButton update="busquedaTabla, :formDataTable, :mensaje"
 					icon="#{msg['i.buscar']}" value="#{msg['btn.buscar']}"
 					actionListener="#{reporteOrdenBean.obtenerOrdenes}" />
-				<p:commandButton ajax="false" icon="fa-print" value="Imprimir"
+				<p:commandButton ajax="false" icon="ui-icon-print" value="Imprimir"
 					actionListener="#{reporteOrdenBean.imprimir}" />
 				<div class="EmptyBox10"></div>
 			</h:form>
@@ -31,12 +31,6 @@
 					paginatorPosition="bottom"
 					rowStyleClass="#{orden.activo eq true ? null:'desactivo'}"
 					emptyMessage="#{msg['lbl.mensajeTabla']}">
-					<f:facet name="header">
-						<p:tooltip for="btnNuevo" value="#{msg['lbl.insertar']}" />
-						<p:commandButton oncomplete="mostarPanelInsertar('')"
-							update=":formNuevo" action="#{reporteOrdenBean.cargarInsertar}"
-							id="btnNuevo" icon="#{msg['i.nuevo']}" />
-					</f:facet>
 					<p:column headerText="Codigo">
 						<p:outputLabel value="#{orden.id}" />
 					</p:column>
