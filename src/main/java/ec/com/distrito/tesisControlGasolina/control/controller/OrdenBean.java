@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.PostConstruct;
 import javax.faces.event.ActionEvent;
@@ -53,6 +54,8 @@ public class OrdenBean implements Serializable {
 	private String choferString;
 	private String vehiculoString;
 
+	private BigDecimal total;
+
 	public OrdenBean() {
 	}
 
@@ -61,6 +64,9 @@ public class OrdenBean implements Serializable {
 		limpiarObjetos();
 		listaOrdenes = new ArrayList<>();
 		listaOrdenes = ordenService.obtener();
+		for (ControlGasto lo : listaOrdenes) {
+			total = total.add(lo.getValor());
+		}
 		choferes = new ArrayList<>();
 		choferes = choferService.obtener(true);
 		vehiculos = new ArrayList<>();
@@ -68,10 +74,14 @@ public class OrdenBean implements Serializable {
 	}
 
 	public void obtenerOrdenes() {
+		total = new BigDecimal("0.00");
 		listaOrdenes = new ArrayList<ControlGasto>();
 		chofer.setId(chofer.getId() == null ? 0 : chofer.getId());
 		vehiculo.setId(vehiculo.getId() == null ? 0 : vehiculo.getId());
 		listaOrdenes = ordenService.obtenerPorBusqueda(chofer.getId(), vehiculo.getId());
+		for (ControlGasto lo : listaOrdenes) {
+			total = total.add(lo.getValor());
+		}
 	}
 
 	public void insertar(ActionEvent actionEvent) {
@@ -96,6 +106,7 @@ public class OrdenBean implements Serializable {
 		orden.setValor(new BigDecimal("0.00"));
 		chofer = new Chofer();
 		vehiculo = new Vehiculo();
+		total = new BigDecimal("0.00");
 	}
 
 	public List<String> obtenerChoferOrdenPorBusqueda(String criterioChoferBusqueda) {
@@ -146,6 +157,12 @@ public class OrdenBean implements Serializable {
 		listaReporte.add(orden);
 		reporteService.generarReportePDF(listaReporte, new HashMap<String, Object>(), "Orden", "orden"
 				+ orden.getChofer().getCedula() + orden.getChofer().getApellido() + orden.getChofer().getNombre());
+	}
+
+	public void imprimirListado() {
+		Map<String, Object> parametro = new HashMap<String, Object>();
+		parametro.put("total", total);
+		reporteService.generarReportePDF(listaOrdenes, parametro, "ReporteOrden", "Reporte De Ordenes Por Fechas");
 	}
 
 	public OrdenService getOrdenService() {
@@ -258,6 +275,14 @@ public class OrdenBean implements Serializable {
 
 	public void setVehiculo(Vehiculo vehiculo) {
 		this.vehiculo = vehiculo;
+	}
+
+	public BigDecimal getTotal() {
+		return total;
+	}
+
+	public void setTotal(BigDecimal total) {
+		this.total = total;
 	}
 
 }

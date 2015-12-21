@@ -118,14 +118,16 @@
 				<text><![CDATA[Chofer]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="257" y="1" width="100" height="20" uuid="a91499c6-5515-46e2-8756-ee75aee5d706"/>
+				<reportElement x="257" y="1" width="70" height="20" uuid="a91499c6-5515-46e2-8756-ee75aee5d706">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Recorrido]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="357" y="0" width="66" height="20" uuid="b61ca8ec-da1c-4a62-ba99-04a1350717c3"/>
+				<reportElement x="327" y="0" width="96" height="20" uuid="b61ca8ec-da1c-4a62-ba99-04a1350717c3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
@@ -143,7 +145,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Placa]]></text>
+				<text><![CDATA[Tipo]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="0" width="54" height="20" uuid="d65fb60d-1545-49c1-b7b9-0525de4bf7b0"/>
@@ -158,37 +160,54 @@
 		<band height="20">
 			<textField>
 				<reportElement x="0" y="0" width="40" height="20" uuid="cfb40cfc-c81c-41f1-9e8b-f9433741f662"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="103" y="0" width="156" height="20" uuid="60b23d71-1708-4e08-92fe-31cb2ff0ed69"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{chofer}.getCedula() +"-"+ $F{chofer}.getApellido() +" "+ $F{chofer}.getNombre()]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="257" y="0" width="100" height="20" uuid="1eefefe0-45d1-45f1-81bf-86176852f37e"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<reportElement x="257" y="0" width="70" height="20" uuid="1eefefe0-45d1-45f1-81bf-86176852f37e">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{recorrido}]]></textFieldExpression>
 			</textField>
 			<textField pattern="M/d/yy">
 				<reportElement x="44" y="0" width="56" height="20" uuid="79ce2e15-2829-40a1-bb11-ef682c05c14d"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="357" y="0" width="66" height="20" uuid="38f00954-0b0a-4646-a5ff-945ea8e6216f"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$F{vehiculo}.getMarca()+" - "+$F{vehiculo}.getModelo()]]></textFieldExpression>
+				<reportElement x="327" y="0" width="96" height="20" uuid="38f00954-0b0a-4646-a5ff-945ea8e6216f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vehiculo}.getPlaca()+" - "+$F{vehiculo}.getMarca()+" - "+$F{vehiculo}.getModelo()]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="424" y="0" width="60" height="20" uuid="095cd600-189e-42a7-85c6-e347722e541f"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$F{vehiculo}.getPlaca()]]></textFieldExpression>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vehiculo}.getTipoCombustible()]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
 				<reportElement x="481" y="0" width="56" height="20" uuid="470a64d4-3d7a-45a9-8558-eea0ae4e9ba2"/>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{valor}]]></textFieldExpression>
 			</textField>
 		</band>

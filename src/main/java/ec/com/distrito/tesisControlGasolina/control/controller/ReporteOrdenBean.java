@@ -71,7 +71,6 @@ public class ReporteOrdenBean implements Serializable {
 		for (ControlGasto lo : listaOrdenes) {
 			total = total.add(lo.getValor());
 		}
-		System.out.println(total);
 		choferes = new ArrayList<>();
 		choferes = choferService.obtener(true);
 		vehiculos = new ArrayList<>();
@@ -87,7 +86,6 @@ public class ReporteOrdenBean implements Serializable {
 		for (ControlGasto lo : listaOrdenes) {
 			total = total.add(lo.getValor());
 		}
-		System.out.println(total);
 	}
 
 	public void insertar(ActionEvent actionEvent) {

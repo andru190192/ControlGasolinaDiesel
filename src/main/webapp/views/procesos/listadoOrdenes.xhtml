@@ -31,6 +31,8 @@
 				<p:commandButton update="busquedaTabla, :formDataTable, :mensaje"
 					icon="#{msg['i.buscar']}" value="#{msg['btn.buscar']}"
 					actionListener="#{ordenBean.obtenerOrdenes}" />
+				<p:commandButton ajax="false" icon="ui-icon-print" value="Imprimir"
+					actionListener="#{ordenBean.imprimirListado}" />
 				<div class="EmptyBox10"></div>
 			</h:form>
 			<h:form id="formDataTable">
@@ -61,18 +63,29 @@
 					<p:column headerText="Chofer">
 						<p:outputLabel value="#{orden.chofer.apellido}" />
 					</p:column>
-					<p:column headerText="vehiculo">
-						<p:outputLabel value="#{orden.vehiculo.placa}" />
+					<p:column headerText="Vehiculo">
+						<p:outputLabel
+							value="#{orden.vehiculo.placa} - #{orden.vehiculo.marca} - #{orden.vehiculo.modelo}" />
 					</p:column>
+
 					<p:column headerText="Recorrido">
 						<p:outputLabel value="#{orden.recorrido}" />
 					</p:column>
 					<p:column headerText="valor">
-						<p:outputLabel value="#{orden.valor}" />
+						<p:outputLabel value="#{orden.valor}">
+
+						</p:outputLabel>
 					</p:column>
-					<p:column headerText="Fecha">
-						<p:outputLabel value="#{orden.fecha}" />
+					<p:column headerText="Tipo Combustible">
+						<p:outputLabel value="#{orden.vehiculo.tipoCombustible}" />
 					</p:column>
+
+					<p:columnGroup type="footer">
+						<p:row>
+							<p:column colspan="6" footerText="TOTAL:" />
+							<p:column footerText="#{ordenBean.total}" />
+						</p:row>
+					</p:columnGroup>
 				</p:dataTable>
 			</h:form>
 		</p:panel>
@@ -113,12 +126,18 @@
 							styleClass="DispBlock Wid90 autoCompletar">
 							<p:ajax event="itemSelect" id="prueba"
 								listener="#{ordenBean.cargarVehiculoOrden}"
-								update="autoCompletarVehiculoOrden,placa, :mensaje" />
+								update="autoCompletarVehiculoOrden,placa,tipoCombustible, :mensaje" />
 						</p:autoComplete>
 						<p:outputLabel value="Placa" for="placa" styleClass="DispBlock" />
 						<p:inputText id="placa" readonly="true"
 							onblur="this.value = this.value.toUpperCase()"
 							value="#{ordenBean.orden.vehiculo.placa}"
+							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Tipo Combustible" for="tipoCombustible"
+							styleClass="DispBlock" />
+						<p:inputText id="tipoCombustible" readonly="true"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{ordenBean.orden.vehiculo.tipoCombustible}"
 							styleClass="DispBlock Wid90" />
 						<p:outputLabel value="Valor" for="valor" styleClass="DispBlock" />
 						<p:inputText id="valor"

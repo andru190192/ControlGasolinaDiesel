@@ -9,8 +9,8 @@
 	<ui:define name="content">
 		<p:panel id="panelPrincipal" header="Vehiculos">
 			<h:form id="busquedaTabla">
-				<p:outputLabel value="Cédula/Apellido-Nombre"
-					for="busquedaVehiculos" styleClass="DispBlock" />
+				<p:outputLabel value="Placa/Marca-Modelo" for="busquedaVehiculos"
+					styleClass="DispBlock" />
 				<p:inputText id="busquedaVehiculos"
 					placeholder="Puede buscar por placa, marca o modelo"
 					value="#{vehiculoBean.criterioBusquedaVehiculo}"
@@ -70,8 +70,8 @@
 					<p:column headerText="Color">
 						<p:outputLabel value="#{vehiculo.color}" />
 					</p:column>
-					<p:column headerText="Tipo">
-						<p:outputLabel value="#{vehiculo.tipo}" />
+					<p:column headerText="Tipo Combustible">
+						<p:outputLabel value="#{vehiculo.tipoCombustible}" />
 					</p:column>
 				</p:dataTable>
 			</h:form>
@@ -87,7 +87,9 @@
 					<div id="datosvehiculo" class="divDatosIzq50">
 						<p:outputLabel value="Datos vehiculo" styleClass="subTitulos" />
 						<p:outputLabel value="* Placa" for="placa" styleClass="DispBlock" />
-						<p:inputText id="placa" value="#{vehiculoBean.vehiculo.placa}"
+						<p:inputText id="placa"
+							onblur="this.value = this.value.toUpperCase()"
+							value="#{vehiculoBean.vehiculo.placa}"
 							styleClass="DispBlock Wid90">
 							<p:ajax event="blur" listener="#{vehiculoBean.comprobarVehiculo}"
 								update="formNuevo,:mensaje" />
@@ -113,6 +115,14 @@
 							onblur="this.value = this.value.toUpperCase()"
 							value="#{vehiculoBean.vehiculo.tipo}"
 							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Tipo de Combustible" for="tipoCombustible"
+							styleClass="DispBlock" />
+						<p:selectOneMenu id="tipoCombustible"
+							value="#{vehiculoBean.vehiculo.tipoCombustible}"
+							styleClass="DispBlock">
+							<f:selectItem itemLabel="GASOLINA" itemValue="GASOLINA" />
+							<f:selectItem itemLabel="DIESEL" itemValue="DIESEL" />
+						</p:selectOneMenu>
 					</div>
 				</div>
 				<div class="EmptyBox10"></div>
@@ -163,6 +173,14 @@
 							onblur="this.value = this.value.toUpperCase()"
 							value="#{vehiculoBean.vehiculo.tipo}"
 							styleClass="DispBlock Wid90" />
+						<p:outputLabel value="Tipo de Combustible" for="tipoCombustible"
+							styleClass="DispBlock" />
+						<p:selectOneMenu id="tipoCombustible" panelStyleClass="DispBlock"
+							value="#{vehiculoBean.vehiculo.tipoCombustible}"
+							styleClass="DispBlock">
+							<f:selectItem itemLabel="GASOLINA" itemValue="GASOLINA" />
+							<f:selectItem itemLabel="DIESEL" itemValue="DIESEL" />
+						</p:selectOneMenu>
 					</div>
 				</div>
 				<div class="EmptyBox10"></div>

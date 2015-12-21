@@ -37,33 +37,25 @@
 							update=":formNuevo" action="#{reporteOrdenBean.cargarInsertar}"
 							id="btnNuevo" icon="#{msg['i.nuevo']}" />
 					</f:facet>
-					<p:column headerText="#{msg['lbl.gestionar']}">
-						<p:tooltip for="btnImprimir" value="Imprimir" />
-						<p:commandButton id="btnImprimir" update=":mensaje" ajax="false"
-							action="#{reporteOrdenBean.imprimir}" icon="#{msg['i.editar']}">
-							<f:setPropertyActionListener value="#{orden}"
-								target="#{reporteOrdenBean.orden}" />
-						</p:commandButton>
-					</p:column>
-					<p:column headerText="Cod.">
+					<p:column headerText="Codigo">
 						<p:outputLabel value="#{orden.id}" />
 					</p:column>
 					<p:column headerText="Chofer">
 						<p:outputLabel value="#{orden.chofer.apellido}" />
 					</p:column>
-					<p:column headerText="vehiculo">
+					<p:column headerText="Vehiculo">
 						<p:outputLabel value="#{orden.vehiculo.placa}" />
 					</p:column>
 					<p:column headerText="Recorrido">
 						<p:outputLabel value="#{orden.recorrido}" />
 					</p:column>
-					<p:column headerText="valor">
+					<p:column headerText="Valor">
 						<p:outputLabel value="#{orden.valor}" />
 					</p:column>
 					<p:column headerText="Fecha">
 						<p:outputLabel value="#{orden.fecha}" />
 					</p:column>
-					
+
 					<p:columnGroup type="footer">
 						<p:row>
 							<p:column colspan="6" footerText="TOTAL:" />

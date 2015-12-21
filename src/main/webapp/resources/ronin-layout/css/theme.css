@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: 'dosismedium';
-    src: url("/shrimpweb/javax.faces.resource/fonts/dosis-medium-webfont.eot.jsf?ln=primefaces-ronin");
-    src: url("/shrimpweb/javax.faces.resource/fonts/dosis-medium-webfont.eot.jsf?ln=primefaces-ronin#iefix") format('embedded-opentype'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-medium-webfont.woff2.jsf?ln=primefaces-ronin") format('woff2'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-medium-webfont.woff.jsf?ln=primefaces-ronin") format('woff'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-medium-webfont.ttf.jsf?ln=primefaces-ronin") format('truetype'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-medium-webfont.svg.jsf?ln=primefaces-ronin#dosismedium") format('svg');
+    src: url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-medium-webfont.eot.jsf?ln=primefaces-ronin");
+    src: url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-medium-webfont.eot.jsf?ln=primefaces-ronin#iefix") format('embedded-opentype'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-medium-webfont.woff2.jsf?ln=primefaces-ronin") format('woff2'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-medium-webfont.woff.jsf?ln=primefaces-ronin") format('woff'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-medium-webfont.ttf.jsf?ln=primefaces-ronin") format('truetype'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-medium-webfont.svg.jsf?ln=primefaces-ronin#dosismedium") format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -21,12 +21,12 @@
 
 @font-face {
     font-family: 'dosisregular';
-    src: url("/shrimpweb/javax.faces.resource/fonts/dosis-regular-webfont.eot.jsf?ln=primefaces-ronin");
-    src: url("/shrimpweb/javax.faces.resource/fonts/dosis-regular-webfont.eot.jsf?ln=primefaces-ronin#iefix") format('embedded-opentype'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-regular-webfont.woff2.jsf?ln=primefaces-ronin") format('woff2'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-regular-webfont.woff.jsf?ln=primefaces-ronin") format('woff'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-regular-webfont.ttf.jsf?ln=primefaces-ronin") format('truetype'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-regular-webfont.svg.jsf?ln=primefaces-ronin#dosisregular") format('svg');
+    src: url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-regular-webfont.eot.jsf?ln=primefaces-ronin");
+    src: url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-regular-webfont.eot.jsf?ln=primefaces-ronin#iefix") format('embedded-opentype'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-regular-webfont.woff2.jsf?ln=primefaces-ronin") format('woff2'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-regular-webfont.woff.jsf?ln=primefaces-ronin") format('woff'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-regular-webfont.ttf.jsf?ln=primefaces-ronin") format('truetype'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-regular-webfont.svg.jsf?ln=primefaces-ronin#dosisregular") format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -34,12 +34,12 @@
 
 @font-face {
     font-family: 'dosissemibold';
-    src: url("/shrimpweb/javax.faces.resource/fonts/dosis-semibold-webfont.eot.jsf?ln=primefaces-ronin");
-    src: url("/shrimpweb/javax.faces.resource/fonts/dosis-semibold-webfont.eot.jsf?ln=primefaces-ronin#iefix") format('embedded-opentype'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-semibold-webfont.woff2.jsf?ln=primefaces-ronin") format('woff2'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-semibold-webfont.woff.jsf?ln=primefaces-ronin") format('woff'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-semibold-webfont.ttf.jsf?ln=primefaces-ronin") format('truetype'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-semibold-webfont.svg.jsf?ln=primefaces-ronin#dosissemibold") format('svg');
+    src: url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-semibold-webfont.eot.jsf?ln=primefaces-ronin");
+    src: url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-semibold-webfont.eot.jsf?ln=primefaces-ronin#iefix") format('embedded-opentype'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-semibold-webfont.woff2.jsf?ln=primefaces-ronin") format('woff2'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-semibold-webfont.woff.jsf?ln=primefaces-ronin") format('woff'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-semibold-webfont.ttf.jsf?ln=primefaces-ronin") format('truetype'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-semibold-webfont.svg.jsf?ln=primefaces-ronin#dosissemibold") format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -47,12 +47,12 @@
 
 @font-face {
     font-family: 'dosislight';
-    src: url("/shrimpweb/javax.faces.resource/fonts/dosis-light-webfont.eot.jsf?ln=primefaces-ronin");
-    src: url("/shrimpweb/javax.faces.resource/fonts/dosis-light-webfont.eot.jsf?ln=primefaces-ronin#iefix") format('embedded-opentype'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-light-webfont.woff2.jsf?ln=primefaces-ronin") format('woff2'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-light-webfont.woff.jsf?ln=primefaces-ronin") format('woff'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-light-webfont.ttf.jsf?ln=primefaces-ronin") format('truetype'),
-         url("/shrimpweb/javax.faces.resource/fonts/dosis-light-webfont.svg.jsf?ln=primefaces-ronin#dosislight") format('svg');
+    src: url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-light-webfont.eot.jsf?ln=primefaces-ronin");
+    src: url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-light-webfont.eot.jsf?ln=primefaces-ronin#iefix") format('embedded-opentype'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-light-webfont.woff2.jsf?ln=primefaces-ronin") format('woff2'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-light-webfont.woff.jsf?ln=primefaces-ronin") format('woff'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-light-webfont.ttf.jsf?ln=primefaces-ronin") format('truetype'),
+         url("/tesisControlGasolina/javax.faces.resource/fonts/dosis-light-webfont.svg.jsf?ln=primefaces-ronin#dosislight") format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -224,7 +224,7 @@ label.ui-state-error{color:#F03369 !important;}
 }
 .ui-icon,
 .ui-widget-content .ui-icon {
-	background-image: url("/shrimpweb/javax.faces.resource/images/ui-icons_72b42d_256x240.png.jsf?ln=primefaces-ronin");
+	background-image: url("/tesisControlGasolina/javax.faces.resource/images/ui-icons_72b42d_256x240.png.jsf?ln=primefaces-ronin");
 }
 .ui-widget-header .ui-icon {
 	/*background-image: url("images/ui-icons_ffffff_256x240.png");*/
@@ -234,22 +234,22 @@ label.ui-state-error{color:#F03369 !important;}
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-	background-image: url("/shrimpweb/javax.faces.resource/images/ui-icons_ffffff_256x240.png.jsf?ln=primefaces-ronin");
+	background-image: url("/tesisControlGasolina/javax.faces.resource/images/ui-icons_ffffff_256x240.png.jsf?ln=primefaces-ronin");
 }
 .ui-state-active .ui-icon {
-	background-image: url("/shrimpweb/javax.faces.resource/images/ui-icons_ffffff_256x240.png.jsf?ln=primefaces-ronin");
+	background-image: url("/tesisControlGasolina/javax.faces.resource/images/ui-icons_ffffff_256x240.png.jsf?ln=primefaces-ronin");
 }
 .ui-state-highlight .ui-icon {
-	background-image: url("/shrimpweb/javax.faces.resource/images/ui-icons_4eb305_256x240.png.jsf?ln=primefaces-ronin");
+	background-image: url("/tesisControlGasolina/javax.faces.resource/images/ui-icons_4eb305_256x240.png.jsf?ln=primefaces-ronin");
 }
 .ui-state-error .ui-icon,
 .ui-state-error-text .ui-icon {
-	background-image: url("/shrimpweb/javax.faces.resource/images/ui-icons_cd0a0a_256x240.png.jsf?ln=primefaces-ronin");
+	background-image: url("/tesisControlGasolina/javax.faces.resource/images/ui-icons_cd0a0a_256x240.png.jsf?ln=primefaces-ronin");
 }
 
 /* positioning */
-.ui-icon-default { background-image:url("/shrimpweb/javax.faces.resource/images/default.svg.jsf?ln=primefaces-ronin") !important; background-position:center; background-size:100%;}
-.ui-icon-blank { background-image:url("/shrimpweb/javax.faces.resource/images/blank.svg.jsf?ln=primefaces-ronin") !important; background-position:center; background-size:100%;}
+.ui-icon-default { background-image:url("/tesisControlGasolina/javax.faces.resource/images/default.svg.jsf?ln=primefaces-ronin") !important; background-position:center; background-size:100%;}
+.ui-icon-blank { background-image:url("/tesisControlGasolina/javax.faces.resource/images/blank.svg.jsf?ln=primefaces-ronin") !important; background-position:center; background-size:100%;}
 .ui-icon-blank { background-position: 16px 16px; }
 .ui-icon-carat-1-n { background-position: 0 0; }
 .ui-icon-carat-1-ne { background-position: -16px 0; }
@@ -327,7 +327,7 @@ label.ui-state-error{color:#F03369 !important;}
 .ui-icon-folder-open { background-position: -16px -96px; }
 .ui-icon-document { background-position: -32px -96px; }
 .ui-icon-document-b { background-position: -48px -96px; }
-.ui-icon-note { background-image:url("/shrimpweb/javax.faces.resource/images/note.svg.jsf?ln=primefaces-ronin"); background-position:center; background-size:100%;}
+.ui-icon-note { background-image:url("/tesisControlGasolina/javax.faces.resource/images/note.svg.jsf?ln=primefaces-ronin"); background-position:center; background-size:100%;}
 .ui-icon-mail-closed { background-position: -80px -96px; }
 .ui-icon-mail-open { background-position: -96px -96px; }
 .ui-icon-suitcase { background-position: -112px -96px; }
@@ -489,8 +489,8 @@ label{font-weight:normal !important;}
 .ui-breadcrumb ul li .ui-menuitem-link{font-size:16px; color:#003D50; letter-spacing:0px;}
 .ui-breadcrumb ul li .ui-menuitem-link:hover{color:#CE2246;}
 .ui-breadcrumb ul li{z-index:990 !important; margin-right:10px !important;}
-.ui-breadcrumb .ui-icon-home{background-image:url("/shrimpweb/javax.faces.resource/images/breadcrumb-home.svg.jsf?ln=primefaces-ronin") !important; background-position:center 5px !important; background-size:100% !important; height:30px;}
-.ui-breadcrumb-chevron{height:20px !important; background-image:url("/shrimpweb/javax.faces.resource/images/breadcrumb-arrow.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:60% !important;
+.ui-breadcrumb .ui-icon-home{background-image:url("/tesisControlGasolina/javax.faces.resource/images/breadcrumb-home.svg.jsf?ln=primefaces-ronin") !important; background-position:center 5px !important; background-size:100% !important; height:30px;}
+.ui-breadcrumb-chevron{height:20px !important; background-image:url("/tesisControlGasolina/javax.faces.resource/images/breadcrumb-arrow.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:60% !important;
         margin-top:3px !important;}
 
 /*Style For DataTable ------------------------------------------------------------------------------------- */
@@ -500,9 +500,9 @@ label{font-weight:normal !important;}
 .ui-datatable .ui-datatable-sticky:hover{border:0px !important;}
 /*.ui-datatable-scrollable{border:0px; background-color:transparent;}
 .ui-datatable-scrollable:hover{border:0px !important; background-color:transparent;}*/
-    .ui-datatable .ui-icon-arrowthick-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; 
+    .ui-datatable .ui-icon-arrowthick-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; 
                            background-size:110%; background-repeat:no-repeat;}
-    .ui-datatable .ui-icon-arrowthick-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; 
+    .ui-datatable .ui-icon-arrowthick-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; 
                            background-size:110%; background-repeat:no-repeat;}
     .ui-datatable .ui-datatable-odd{background-color:#EEF2F7;}
     .ui-datatable .ui-datatable-even{background-color:#FBFCFD;}
@@ -538,10 +538,10 @@ label{font-weight:normal !important;}
 	.ui-datatable .ui-paginator .ui-paginator-last, .ui-datatable .ui-paginator .ui-paginator-rpp-options{font-size:18px; padding:4px 6px; font-weight: bold; border:dotted 1px transparent; color:#003D50; 
 			-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; border-radius:0px !important;}
 	.ui-datatable .ui-paginator .ui-paginator-rpp-options{outline:none;}
-	.ui-datatable .ui-paginator .ui-paginator-first .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
-	.ui-datatable .ui-paginator .ui-paginator-last .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
-	.ui-datatable .ui-paginator .ui-paginator-prev .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
-	.ui-datatable .ui-paginator .ui-paginator-next .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datatable .ui-paginator .ui-paginator-first .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datatable .ui-paginator .ui-paginator-last .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datatable .ui-paginator .ui-paginator-prev .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datatable .ui-paginator .ui-paginator-next .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
 	.ui-datatable .ui-paginator .ui-state-active, .ui-datatable .ui-paginator .ui-state-hover,
 	.ui-datatable .ui-paginator .ui-paginator-pages .ui-state-active, .ui-datatable .ui-paginator .ui-paginator-pages .ui-state-hover{color:#CE2246 !important; background-repeat:no-repeat; border-bottom: solid 1px #CE2246; 
                             font-size: 18px; border-radius:0px !important;}
@@ -571,34 +571,34 @@ label{font-weight:normal !important;}
                              background-size: 80% !important; margin-left: 12px !important; margin-top: -8px !important;}
         .ui-datatable table tbody tr td{color:#003D50; border: solid 1px #D9E3E8; font-size: 14px; font-family: 'dosismedium';
         -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
-            .ui-datatable  table tbody tr td .ui-row-toggler.ui-icon-circle-triangle-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow-gray.svg.jsf?ln=primefaces-ronin"); 
+            .ui-datatable  table tbody tr td .ui-row-toggler.ui-icon-circle-triangle-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow-gray.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:110%;}
-            .ui-datatable  table tbody tr td .ui-row-toggler.ui-icon-circle-triangle-e{background-image:url("/shrimpweb/javax.faces.resource/images/rightarrow-gray.svg.jsf?ln=primefaces-ronin"); 
+            .ui-datatable  table tbody tr td .ui-row-toggler.ui-icon-circle-triangle-e{background-image:url("/tesisControlGasolina/javax.faces.resource/images/rightarrow-gray.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:110%;}
         .ui-datatable  table tbody tr td .ui-cell-editor-output{}
-            .ui-datatable  table tbody tr td .ui-row-editor .ui-icon-pencil{background-image:url("/shrimpweb/javax.faces.resource/images/pen-gray.svg.jsf?ln=primefaces-ronin"); 
+            .ui-datatable  table tbody tr td .ui-row-editor .ui-icon-pencil{background-image:url("/tesisControlGasolina/javax.faces.resource/images/pen-gray.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:120%;}
-            .ui-datatable  table tbody tr td .ui-row-editor .ui-icon-check{background-image:url("/shrimpweb/javax.faces.resource/images/check-gray.svg.jsf?ln=primefaces-ronin"); 
+            .ui-datatable  table tbody tr td .ui-row-editor .ui-icon-check{background-image:url("/tesisControlGasolina/javax.faces.resource/images/check-gray.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:120%;}
-            .ui-datatable  table tbody tr td .ui-row-editor .ui-icon-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin"); 
+            .ui-datatable  table tbody tr td .ui-row-editor .ui-icon-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:120%;}
         .ui-datatable  table tbody .ui-state-hover td{background-color:#E0E6ED; color:#CE2246;}
         .ui-datatable  table tbody .ui-state-highlight td{background-color:#CE2246; color:#ffffff;}
         .ui-datatable  table tbody .ui-state-highlight.ui-row-editing td{background-color:#DDE4ED; color: #F1F6F9;}
-            .ui-datatable  table tbody tr td .ui-icon-arrow-4{background-image:url("/shrimpweb/javax.faces.resource/images/movearrow-gray.svg.jsf?ln=primefaces-ronin"); 
+            .ui-datatable  table tbody tr td .ui-icon-arrow-4{background-image:url("/tesisControlGasolina/javax.faces.resource/images/movearrow-gray.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:100%;}
         
         .ui-datatable  table thead tr .ui-state-default .ui-icon-carat-2-n-s,
-        .ui-datatable .ui-datatable-sticky table thead tr .ui-state-default .ui-icon-carat-2-n-s{background-image:url("/shrimpweb/javax.faces.resource/images/updown-navy-arrow.svg.jsf?ln=primefaces-ronin"); 
+        .ui-datatable .ui-datatable-sticky table thead tr .ui-state-default .ui-icon-carat-2-n-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/updown-navy-arrow.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:110%; background-repeat:no-repeat; margin-left: 5px;}
         .ui-datatable  table thead tr .ui-state-hover .ui-icon-carat-2-n-s,
-        .ui-datatable .ui-datatable-sticky table thead tr .ui-state-hover .ui-icon-carat-2-n-s{background-image:url("/shrimpweb/javax.faces.resource/images/updown-arrow.svg.jsf?ln=primefaces-ronin"); 
+        .ui-datatable .ui-datatable-sticky table thead tr .ui-state-hover .ui-icon-carat-2-n-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/updown-arrow.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:110%; background-repeat:no-repeat; margin-left: 5px;}
         .ui-datatable  table thead tr .ui-state-active .ui-icon-triangle-1-n,
-        .ui-datatable .ui-datatable-sticky table thead tr .ui-state-active .ui-icon-triangle-1-n{background-image:url("/shrimpweb/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin"); 
+        .ui-datatable .ui-datatable-sticky table thead tr .ui-state-active .ui-icon-triangle-1-n{background-image:url("/tesisControlGasolina/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:110%; background-repeat:no-repeat; margin-left: 5px;}
         .ui-datatable  table thead tr .ui-state-active .ui-icon-triangle-1-s,
-        .ui-datatable .ui-datatable-sticky table thead tr .ui-state-active .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); 
+        .ui-datatable .ui-datatable-sticky table thead tr .ui-state-active .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:110%; background-repeat:no-repeat; margin-left: 5px;}
         
     .ui-datatable-footer{background-color:#F6FAFC; color:#B9CDD5; font-family:'dosismedium';}
@@ -622,9 +622,9 @@ label{font-weight:normal !important;}
 .ui-draggable-dragging .ui-icon-carat-2-n-s{background-image:none;}
 .ui-draggable-dragging .ui-icon-carat-1-n{background-image:none;}
 .ui-draggable-dragging .ui-icon-carat-1-s{background-image:none;}
-.ui-datatable > .ui-icon-arrowthick-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow-blue.svg.jsf?ln=primefaces-ronin"); 
+.ui-datatable > .ui-icon-arrowthick-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow-blue.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:100%; background-repeat:no-repeat; margin-left: 5px;}
-.ui-datatable > .ui-icon-arrowthick-1-n{background-image:url("/shrimpweb/javax.faces.resource/images/uparrow-blue.svg.jsf?ln=primefaces-ronin"); 
+.ui-datatable > .ui-icon-arrowthick-1-n{background-image:url("/tesisControlGasolina/javax.faces.resource/images/uparrow-blue.svg.jsf?ln=primefaces-ronin"); 
                             background-position:center !important; background-size:100%; background-repeat:no-repeat; margin-left: 5px;}
 
 .ui-sortable-helper{}
@@ -652,10 +652,10 @@ label{font-weight:normal !important;}
 	.ui-datagrid .ui-paginator .ui-paginator-last, .ui-datagrid .ui-paginator .ui-paginator-rpp-options{font-size:18px; padding:4px 6px; border:dotted 1px transparent;color:#003D50;
         -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; border-radius:0px !important;}
 	.ui-datagrid .ui-paginator .ui-paginator-rpp-options{outline:none;}
-	.ui-datagrid .ui-paginator .ui-paginator-first .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
-	.ui-datagrid .ui-paginator .ui-paginator-last .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
-	.ui-datagrid .ui-paginator .ui-paginator-prev .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
-	.ui-datagrid .ui-paginator .ui-paginator-next .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datagrid .ui-paginator .ui-paginator-first .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datagrid .ui-paginator .ui-paginator-last .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datagrid .ui-paginator .ui-paginator-prev .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datagrid .ui-paginator .ui-paginator-next .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
 	.ui-datagrid .ui-paginator .ui-state-active,
     .ui-datagrid .ui-paginator .ui-state-hover,
 	.ui-datagrid .ui-paginator .ui-paginator-pages .ui-state-active, 
@@ -693,10 +693,10 @@ label{font-weight:normal !important;}
 	.ui-datalist .ui-paginator .ui-paginator-last, .ui-datalist .ui-paginator .ui-paginator-rpp-options{font-size:18px; padding:4px 6px; font-weight: bold; border:dotted 1px transparent; color:#003D50; 
 			-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; border-radius:0px !important;}
 	.ui-datalist .ui-paginator .ui-paginator-rpp-options{outline:none;}
-	.ui-datalist .ui-paginator .ui-paginator-first .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
-	.ui-datalist .ui-paginator .ui-paginator-last .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
-	.ui-datalist .ui-paginator .ui-paginator-prev .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
-	.ui-datalist .ui-paginator .ui-paginator-next .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datalist .ui-paginator .ui-paginator-first .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datalist .ui-paginator .ui-paginator-last .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-double-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datalist .ui-paginator .ui-paginator-prev .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
+	.ui-datalist .ui-paginator .ui-paginator-next .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position:center !important; background-size:100%; background-repeat:no-repeat;}
 	.ui-datalist .ui-paginator .ui-state-active, .ui-datalist .ui-paginator .ui-state-hover,
 	.ui-datalist .ui-paginator .ui-paginator-pages .ui-state-active, .ui-datalist .ui-paginator .ui-paginator-pages .ui-state-hover{color:#CE2246 !important; background-repeat:no-repeat;
                             border-bottom: solid 1px #CE2246; font-size: 18px; border-radius:0px !important;}
@@ -712,7 +712,7 @@ label{font-weight:normal !important;}
 .ui-picklist{display:table !important; font-size: 14px; color: #778D9B; font-family:'dosismedium';}
 .ui-picklist:hover .ui-picklist-list, .ui-picklist:hover .ui-picklist-caption{}
 .ui-picklist .ui-picklist-filter{width:81.5% !important; padding:8px 6px 8px 30px !important;}
-.ui-picklist .ui-picklist-filter-container .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/search-icon.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist .ui-picklist-filter-container .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/search-icon.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 100%; width: 28px; height: 28px; left: 3px; top: 3px !important;}
 .ui-picklist .ui-picklist-buttons{display: table-cell; float: none; vertical-align:middle;}
 .ui-picklist .ui-picklist-caption{border:solid 1px #C6D6DF; background-color:#EDF3F6; color:#003D50; padding: 4px 0px !important; margin: 4px 0px 0px 0px; font-size:16px;
@@ -733,50 +733,50 @@ label{font-weight:normal !important;}
 .ui-picklist .ui-picklist-target-controls .ui-button-text{border-radius:5px !important;}
 
 .ui-picklist .ui-picklist-buttons-cell .ui-picklist-button-move-up .ui-icon,
-.ui-picklist .ui-picklist-source-controls .ui-picklist-button-move-up .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist .ui-picklist-source-controls .ui-picklist-button-move-up .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 75%; left:36% !important; margin-left: -8px; top:32% !important; margin-top: -8px; width: 26px; height: 26px;}
 .ui-picklist .ui-picklist-buttons-cell .ui-picklist-button-move-top .ui-icon,
-.ui-picklist .ui-picklist-source-controls .ui-picklist-button-move-top .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/toparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist .ui-picklist-source-controls .ui-picklist-button-move-top .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/toparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:39% !important; margin-top: -8px; width: 26px; height: 26px;}
 .ui-picklist .ui-picklist-buttons-cell .ui-picklist-button-move-down .ui-icon,
-.ui-picklist .ui-picklist-source-controls .ui-picklist-button-move-down .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist .ui-picklist-source-controls .ui-picklist-button-move-down .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 75%; left:36% !important; margin-left: -8px; top:37% !important; margin-top: -8px; width: 26px; height: 26px;}
 .ui-picklist .ui-picklist-buttons-cell .ui-picklist-button-move-bottom .ui-icon,
-.ui-picklist .ui-picklist-source-controls .ui-picklist-button-move-bottom .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/bottomarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist .ui-picklist-source-controls .ui-picklist-button-move-bottom .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/bottomarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:33% !important; margin-top: -8px; width: 26px; height: 26px;}
 .ui-picklist .ui-picklist-buttons-cell .ui-picklist-button-add .ui-icon,
-.ui-picklist td .ui-picklist-button-add .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist td .ui-picklist-button-add .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 75%; left:36% !important; margin-left: -8px; top:36% !important; margin-top: -8px; width: 26px; height: 26px;}
 .ui-picklist .ui-picklist-buttons-cell .ui-picklist-button-add-all .ui-icon,
-.ui-picklist td .ui-picklist-button-add-all .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-end-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist td .ui-picklist-button-add-all .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-end-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:34% !important; margin-top: -8px; width: 26px; height: 26px;}
 .ui-picklist .ui-picklist-buttons-cell .ui-picklist-button-remove .ui-icon,
-.ui-picklist td .ui-picklist-button-remove .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist td .ui-picklist-button-remove .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 75%; left:36% !important; margin-left: -8px; top:35% !important; margin-top: -8px; width: 26px; height: 26px;}
 .ui-picklist .ui-picklist-buttons-cell .ui-picklist-button-remove-all .ui-icon,
-.ui-picklist td .ui-picklist-button-remove-all .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-end-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist td .ui-picklist-button-remove-all .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-end-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:34% !important; margin-top: -8px; width: 26px; height: 26px;}
 
 .ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-move-up .ui-icon,
-.ui-picklist .ui-picklist-target-controls .ui-picklist-button-move-up .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist .ui-picklist-target-controls .ui-picklist-button-move-up .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:32% !important; margin-top: -8px; width: 26px; height: 26px;}
 .ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-move-top .ui-icon,
-.ui-picklist .ui-picklist-target-controls .ui-picklist-button-move-top .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/toparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist .ui-picklist-target-controls .ui-picklist-button-move-top .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/toparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:32% !important; margin-top: -8px; width: 26px; height: 26px;}
 .ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-move-down .ui-icon,
-.ui-picklist .ui-picklist-target-controls .ui-picklist-button-move-down .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist .ui-picklist-target-controls .ui-picklist-button-move-down .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 75%; left:36% !important; margin-left: -8px; top:37% !important; margin-top: -8px; width: 26px; height: 26px;}
 .ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-move-bottom .ui-icon,
-.ui-picklist .ui-picklist-target-controls .ui-picklist-button-move-bottom .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/bottomarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist .ui-picklist-target-controls .ui-picklist-button-move-bottom .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/bottomarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:33% !important; margin-top: -8px; width: 26px; height: 26px;}
 
-.ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-add .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-add .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 75%; left:36% !important; margin-left: -8px; top:35% !important; margin-top: -8px; width: 26px; height: 26px;}
-.ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-add-all .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/bottomarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-add-all .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/bottomarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:34% !important; margin-top: -8px; width: 26px; height: 26px;}
-.ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-remove .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-remove .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:36% !important; margin-left: -8px; top:34% !important; margin-top: -8px; width: 26px; height: 26px;}
-.ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-remove-all .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/toparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-picklist-vertical .ui-picklist-buttons-cell .ui-picklist-button-remove-all .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/toparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:34% !important; margin-top: -8px; width: 26px; height: 26px;}
 															
 
@@ -787,7 +787,7 @@ label{font-weight:normal !important;}
 .ui-orderlist:hover, .ui-orderlist:focus{}
 .ui-orderlist .ui-orderlist-list{margin-top:10px !important;}
 .ui-orderlist .ui-orderlist-caption{border:dashed 1px #C6D6DF !important; background-color:#EDF3F6; color:#003D50; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;}
-.ui-orderlist .ui-orderlist-list .ui-orderlist-item{padding: 3px 5px !important; font-size: 15px; background-image:url("/shrimpweb/javax.faces.resource/images/move-gray.svg.jsf?ln=primefaces-ronin"); background-position: center right !important; 
+.ui-orderlist .ui-orderlist-list .ui-orderlist-item{padding: 3px 5px !important; font-size: 15px; background-image:url("/tesisControlGasolina/javax.faces.resource/images/move-gray.svg.jsf?ln=primefaces-ronin"); background-position: center right !important; 
                          background-repeat: no-repeat; background-size: 20px; border-radius:3px; color:#003D50;}
 .ui-orderlist .ui-orderlist-list .ui-state-hover{  background-color: #C6D6DF;}
 .ui-orderlist .ui-orderlist-list .ui-state-highlight{background-color:#CE2246; color:#ffffff; font-family:'dosismedium';}
@@ -795,13 +795,13 @@ label{font-weight:normal !important;}
 
 .ui-orderlist .ui-orderlist-controls .ui-button .ui-button-text{border-radius:5px !important;}
 
-.ui-orderlist .ui-orderlist-controls .ui-orderlist-button-move-up .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-orderlist .ui-orderlist-controls .ui-orderlist-button-move-up .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:32% !important; margin-top: -8px; width: 26px; height: 26px;}
-.ui-orderlist .ui-orderlist-controls .ui-orderlist-button-move-top .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/toparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-orderlist .ui-orderlist-controls .ui-orderlist-button-move-top .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/toparrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:32% !important; margin-top: -8px; width: 26px; height: 26px;}
-.ui-orderlist .ui-orderlist-controls .ui-orderlist-button-move-down .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-orderlist .ui-orderlist-controls .ui-orderlist-button-move-down .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:37% !important; margin-top: -8px; width: 26px; height: 26px;}
-.ui-orderlist .ui-orderlist-controls .ui-orderlist-button-move-bottom .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/bottomarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+.ui-orderlist .ui-orderlist-controls .ui-orderlist-button-move-bottom .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/bottomarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 70%; left:37% !important; margin-left: -8px; top:33% !important; margin-top: -8px; width: 26px; height: 26px;}
 
 
@@ -813,17 +813,17 @@ label{font-weight:normal !important;}
             font-family:'dosismedium'; color:#003D50; font-size: 20px;   border-bottom: dashed 1px #C6D6DF; margin:-2px -1px !important;}
             .ui-carousel .ui-carousel-dropdown{margin-top:8px !important;}
         .ui-carousel .ui-carousel-header .ui-carousel-header-title{width:40% !important;   padding-top: 5px !important;}
-        .ui-carousel .ui-carousel-header .ui-carousel-next-button{background-image:url("/shrimpweb/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+        .ui-carousel .ui-carousel-header .ui-carousel-next-button{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 71%; width: 21px; height: 21px; margin-top: 5px; padding: 3px; background-color:#CE2246; border-radius:30px;}
-        .ui-carousel .ui-carousel-header .ui-carousel-prev-button{background-image:url("/shrimpweb/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+        .ui-carousel .ui-carousel-header .ui-carousel-prev-button{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 71%; width: 21px; height: 21px; margin-top: 5px; padding: 3px; background-color:#CE2246; border-radius:30px;}
         .ui-carousel .ui-carousel-header .ui-carousel-next-button:hover,
         .ui-carousel .ui-carousel-header .ui-carousel-prev-button:hover{background-color:#e82850; border-radius:30px !important;}
         .ui-carousel .ui-carousel-header .ui-carousel-page-links{margin-top: 11px;}
-        .ui-carousel .ui-carousel-header .ui-carousel-page-links .ui-carousel-page-link{background-image:url("/shrimpweb/javax.faces.resource/images/blank.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
+        .ui-carousel .ui-carousel-header .ui-carousel-page-links .ui-carousel-page-link{background-image:url("/tesisControlGasolina/javax.faces.resource/images/blank.svg.jsf?ln=primefaces-ronin"); background-position: center !important; background-repeat: no-repeat;
                                                     background-size: 140%;}
         .ui-carousel .ui-carousel-item {border:1px solid transparent}
-        .ui-carousel .ui-carousel-header .ui-carousel-page-links .ui-icon-radio-on{background-image:url("/shrimpweb/javax.faces.resource/images/blank-active.svg.jsf?ln=primefaces-ronin");}
+        .ui-carousel .ui-carousel-header .ui-carousel-page-links .ui-icon-radio-on{background-image:url("/tesisControlGasolina/javax.faces.resource/images/blank-active.svg.jsf?ln=primefaces-ronin");}
           
     .ui-carousel-viewport ul .ui-carousel-item table tbody tr td{border: solid 1px #e5ebf0; -webkit-transition: all 0.5s ease; color:#003D50;
                                        -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; font-size: 15px;}
@@ -855,9 +855,9 @@ label{font-weight:normal !important;}
                border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; font-weight: bold; border: solid 1px transparent;}
         .fc-header tbody tr td .ui-state-hover, .fc-header tbody tr td .ui-state-active{color:#CE2246; background-repeat: no-repeat; border-bottom: solid 1px #CE2246;}
             .fc-header tbody tr td .fc-button .fc-icon-wrap .ui-icon{margin:5px;}
-            .fc-header tbody tr td .fc-button-next .fc-icon-wrap .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
+            .fc-header tbody tr td .fc-button-next .fc-icon-wrap .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
                                                                           background-repeat: no-repeat; background-size: 130%;}
-            .fc-header tbody tr td .fc-button-prev .fc-icon-wrap .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-one-arrow-for-data.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
+            .fc-header tbody tr td .fc-button-prev .fc-icon-wrap .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-one-arrow-for-data.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
                                                                           background-repeat: no-repeat; background-size: 130%;}
         .fc-header tbody tr td span h2{font-size:26px; margin:0px; color:#003D50;}
 .fc-content{padding: 10px;}
@@ -887,9 +887,9 @@ label{font-weight:normal !important;}
            -webkit-border-top-left-radius:4px !important; -webkit-border-top-right-radius:4px !important;
            -moz-border-top-left-radius:4px !important; -moz-border-top-right-radius:4px !important;}
 .fc-toolbar button{border:solid 1px #EDF3F6; background-color:#EDF3F6; color:#CE2246; border-radius:0px !important; font-family:'dosismedium'; padding:3px 5px !important; font-size:16px;}
-    .fc-toolbar .fc-prev-button .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
+    .fc-toolbar .fc-prev-button .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
                                                                           background-repeat: no-repeat; background-size: 100%; width:22px; height: 22px;}
-    .fc-toolbar .fc-next-button .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
+    .fc-toolbar .fc-next-button .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-one-arrow-for-data.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
                                                                           background-repeat: no-repeat; background-size: 100%; width:22px; height: 22px;}
 .fc-toolbar .fc-button-group button{ margin:0px 1px 1px 0px;}
 .fc-toolbar .ui-state-active, .fc-toolbar .ui-state-hover{background-color:#EDF3F6; border-bottom-color:#CE2246; font-family:'dosissemibold';}
@@ -925,7 +925,7 @@ hr.ui-widget-header{background-color: #E5EBF0; border-width:0px;}
 .fc-more-cell .fc-more{color: #27aae1; text-decoration: underline;}
 .fc-popover{border:solid 1px #D1D3D4; background-color: #FBFCFD; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;}
     .fc-popover .fc-header {padding:5px 7px !important; color: #778D9B;}
-        .fc-popover .fc-header .fc-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .fc-popover .fc-header .fc-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
 
 
@@ -938,36 +938,36 @@ hr.ui-widget-header{background-color: #E5EBF0; border-width:0px;}
     .ui-tree .ui-treenode .ui-treenode-label.ui-state-hover{color:#CE2246;}
     .ui-tree .ui-tree-droppoint.ui-state-hover{background-color:#F7941E;}
     .ui-tree .ui-treenode .ui-state-highlight{color:#CE2246;}
-        .ui-tree .ui-treenode .ui-treenode-leaf-icon{/*background-image:url("/shrimpweb/javax.faces.resource/images/treenode-gray.svg.jsf?ln=primefaces-ronin");*/ background-position: center !important; 
+        .ui-tree .ui-treenode .ui-treenode-leaf-icon{/*background-image:url("/tesisControlGasolina/javax.faces.resource/images/treenode-gray.svg.jsf?ln=primefaces-ronin");*/ background-position: center !important; 
                          background-repeat: no-repeat; background-size: 90%;}
-        .ui-tree .ui-treenode .ui-icon-grip-dotted-vertical{background-image:url("/shrimpweb/javax.faces.resource/images/treenode-dots-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-tree .ui-treenode .ui-icon-grip-dotted-vertical{background-image:url("/tesisControlGasolina/javax.faces.resource/images/treenode-dots-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
         .ui-tree .ui-treenode-content{line-height:16px;}
             .ui-tree .ui-treenode-content .ui-chkbox-box{margin-top:0px;}
             .ui-tree .ui-treenode .ui-treenode-label{ margin: 0px; padding: 2px 6px; font-size: 16px; border-radius:3px;}
-                .ui-tree .ui-treenode-content .ui-chkbox-box .ui-icon-minus{background-image:url("/shrimpweb/javax.faces.resource/images/minus-sign-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+                .ui-tree .ui-treenode-content .ui-chkbox-box .ui-icon-minus{background-image:url("/tesisControlGasolina/javax.faces.resource/images/minus-sign-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
     
     .ui-tree .ui-icon{ margin-right:3px;} 
-    .ui-tree .ui-icon-triangle-1-e{background-image:url("/shrimpweb/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-tree .ui-icon-triangle-1-e{background-image:url("/tesisControlGasolina/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 120%;}
-    .ui-tree .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-tree .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 130%;}
-    .ui-tree .ui-icon-triangle-1-w{background-image:url("/shrimpweb/javax.faces.resource/images/leftarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-tree .ui-icon-triangle-1-w{background-image:url("/tesisControlGasolina/javax.faces.resource/images/leftarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 120%;}
-    .ui-tree .ui-icon-folder-collapsed{background-image:url("/shrimpweb/javax.faces.resource/images/folder-close-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-tree .ui-icon-folder-collapsed{background-image:url("/tesisControlGasolina/javax.faces.resource/images/folder-close-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 140%;}
-    .ui-tree .ui-icon-folder-open{background-image:url("/shrimpweb/javax.faces.resource/images/folder-open-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-tree .ui-icon-folder-open{background-image:url("/tesisControlGasolina/javax.faces.resource/images/folder-open-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 160%;}
-    .ui-tree .ui-icon-document{background-image:url("/shrimpweb/javax.faces.resource/images/document-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-tree .ui-icon-document{background-image:url("/tesisControlGasolina/javax.faces.resource/images/document-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 160%;}
-    .ui-tree .ui-icon-note{background-image:url("/shrimpweb/javax.faces.resource/images/note-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-tree .ui-icon-note{background-image:url("/tesisControlGasolina/javax.faces.resource/images/note-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 150%;}
-    .ui-tree .ui-icon-image{background-image:url("/shrimpweb/javax.faces.resource/images/image-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-tree .ui-icon-image{background-image:url("/tesisControlGasolina/javax.faces.resource/images/image-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 150%;}
-    .ui-tree .ui-icon-video{background-image:url("/shrimpweb/javax.faces.resource/images/video-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-tree .ui-icon-video{background-image:url("/tesisControlGasolina/javax.faces.resource/images/video-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 160%;}
-    .ui-tree .ui-icon-music{background-image:url("/shrimpweb/javax.faces.resource/images/music-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-tree .ui-icon-music{background-image:url("/tesisControlGasolina/javax.faces.resource/images/music-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 160%;}
     
 
@@ -994,22 +994,22 @@ hr.ui-widget-header{background-color: #E5EBF0; border-width:0px;}
         .ui-treetable table tbody .ui-state-highlight td{color:#CE2246 !important; background-color:#eff3f5; font-family:'dosismedium';}
     
     .ui-treetable .ui-icon{ margin-right:7px;}
-    .ui-treetable .ui-icon-triangle-1-e{background-image:url("/shrimpweb/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-treetable .ui-icon-triangle-1-e{background-image:url("/tesisControlGasolina/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
-    .ui-treetable .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-treetable .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
-    .ui-treetable .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-treetable .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
-    .ui-treetable .ui-chkbox-box .ui-icon-minus{background-image:url("/shrimpweb/javax.faces.resource/images/minus-sign-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-treetable .ui-chkbox-box .ui-icon-minus{background-image:url("/tesisControlGasolina/javax.faces.resource/images/minus-sign-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
     
-    .ui-treetable table thead tr th .ui-icon-triangle-1-n{background-image:url("/shrimpweb/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important; 
+    .ui-treetable table thead tr th .ui-icon-triangle-1-n{background-image:url("/tesisControlGasolina/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
-    .ui-treetable table thead tr th .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important; 
+    .ui-treetable table thead tr th .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
-    .ui-treetable table thead tr th .ui-icon-carat-2-n-s{background-image:url("/shrimpweb/javax.faces.resource/images/updown-navy-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-treetable table thead tr th .ui-icon-carat-2-n-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/updown-navy-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
-    .ui-treetable table thead tr th.ui-state-hover .ui-icon-carat-2-n-s{background-image:url("/shrimpweb/javax.faces.resource/images/updown-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-treetable table thead tr th.ui-state-hover .ui-icon-carat-2-n-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/updown-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
 
 .ui-treetable-scrollable{border:0px;}
@@ -1022,9 +1022,9 @@ hr.ui-widget-header{background-color: #E5EBF0; border-width:0px;}
     .ui-tree-horizontal .ui-treenode-collapsed, .ui-tree-horizontal .ui-treenode-leaf{padding:5px 0px 5px 40px !important;}
         .ui-tree-horizontal .ui-treenode .ui-treenode-content{border: solid 1px #778D9B; background-color: #FBFCFD;}
         
-        .ui-tree-horizontal .ui-icon-plus{background-image:url("/shrimpweb/javax.faces.resource/images/plus-sign-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-tree-horizontal .ui-icon-plus{background-image:url("/tesisControlGasolina/javax.faces.resource/images/plus-sign-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
-        .ui-tree-horizontal .ui-icon-minus{background-image:url("/shrimpweb/javax.faces.resource/images/minus-sign-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-tree-horizontal .ui-icon-minus{background-image:url("/tesisControlGasolina/javax.faces.resource/images/minus-sign-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
         
         .ui-treetable-footer{height: auto !important; background-color: #F9FAFC; margin: 4px -2px 0px -2px; padding: 10px 10px !important; border-top: solid 1px #E8EDF2 !important; font-size: 14px; color:#A7B7C1; 
@@ -1045,9 +1045,9 @@ hr.ui-widget-header{background-color: #E5EBF0; border-width:0px;}
     .ui-accordion-header{border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; font-size: 15px !important; color:#ffffff; background-color:#003D50;
                          padding: 8px 5px 8px 30px !important; margin-bottom:1px !important; font-weight:normal !important;}
     .ui-accordion .ui-state-hover, .ui-accordion .ui-state-active{background-color:#005974; color:#A7CFDB;}
-        .ui-accordion-header .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-accordion-header .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
-        .ui-accordion-header .ui-icon-triangle-1-e{background-image:url("/shrimpweb/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-accordion-header .ui-icon-triangle-1-e{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
     .ui-accordion-content{padding:5px!important; font-size:15px !important; color:#ccc;}
     
@@ -1092,20 +1092,20 @@ hr.ui-widget-header{background-color: #E5EBF0; border-width:0px;}
         .ui-tabs-top .ui-tabs-navscroller .ui-tabs-nav{border-radius:0px; -webkit-border-radius:0px; -moz-border-radius:0px;}
         .ui-tabs-top .ui-tabs-navscroller .ui-tabs-navscroller-btn{height: 36px; padding: 0px 4px; background-color:#CE2246;}
         .ui-tabs-top .ui-tabs-navscroller .ui-tabs-navscroller-btn-left{border-bottom-right-radius: 0px; border-top-right-radius: 0px; border-top-left-radius: 2px; left:0px;}
-            .ui-tabs-top .ui-tabs-navscroller .ui-tabs-navscroller-btn-left .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-tabs-top .ui-tabs-navscroller .ui-tabs-navscroller-btn-left .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%; margin-top: 9px;}
         .ui-tabs-top .ui-tabs-navscroller .ui-tabs-navscroller-btn-right{border-bottom-left-radius: 0px; border-top-left-radius: 0px; border-top-right-radius: 2px; right: 0px;}
-            .ui-tabs-top .ui-tabs-navscroller .ui-tabs-navscroller-btn-right .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-tabs-top .ui-tabs-navscroller .ui-tabs-navscroller-btn-right .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%; margin-top: 9px;}
         
         .ui-tabs-top .ui-tabs-navscroller .ui-state-disabled{opacity:1; filter: alpha(opacity=100);}
             .ui-tabs-top .ui-tabs-navscroller .ui-state-disabled .ui-icon{opacity:0.4; filter: alpha(opacity=40);}
         
         .ui-tabs-top .ui-tabs-nav li{border:solid 1px transparent !important; top:1px !important; font-size: 14px;   margin: 0 .2em 1px 0 !important;}
-            .ui-tabs-top .ui-tabs-nav li .ui-icon-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-tabs-top .ui-tabs-nav li .ui-icon-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%; margin-top: 8px !important;}
             .ui-tabs-top .ui-tabs-nav li.ui-state-hover .ui-icon-close,
-            .ui-tabs-top .ui-tabs-nav li.ui-state-active .ui-icon-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete-red.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-tabs-top .ui-tabs-nav li.ui-state-active .ui-icon-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete-red.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%; margin-top: 8px !important;}
         .ui-tabs-top .ui-tabs-nav li a{color:#FBFCFD !important; font-size: 15px;}
         .ui-tabs-top .ui-tabs-nav li.ui-tabs-selected,
@@ -1172,19 +1172,19 @@ hr.ui-widget-header{background-color: #E5EBF0; border-width:0px;}
             .ui-tabs-top .ui-tabs-navscroller .ui-tabs-navscroller-btn{height:36.5px;}
         }
         .ui-tabs-bottom .ui-tabs-navscroller .ui-tabs-navscroller-btn-left{border-bottom-right-radius: 0px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius:2px; left:0px;}
-            .ui-tabs-bottom .ui-tabs-navscroller .ui-tabs-navscroller-btn-left .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-tabs-bottom .ui-tabs-navscroller .ui-tabs-navscroller-btn-left .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%; margin-top: 9px;}
         .ui-tabs-bottom .ui-tabs-navscroller .ui-tabs-navscroller-btn-right{border-bottom-right-radius: 2px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; right: 0px;}
-            .ui-tabs-bottom .ui-tabs-navscroller .ui-tabs-navscroller-btn-right .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-tabs-bottom .ui-tabs-navscroller .ui-tabs-navscroller-btn-right .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%; margin-top: 9px;}
         
         .ui-tabs-bottom .ui-tabs-navscroller .ui-state-disabled{opacity:1; filter: alpha(opacity=100);}
             .ui-tabs-bottom .ui-tabs-navscroller .ui-state-disabled .ui-icon{opacity:0.4; filter: alpha(opacity=40);}
         .ui-tabs-bottom .ui-tabs-nav li{border:solid 1px transparent !important; font-size: 14px; }
-            .ui-tabs-bottom .ui-tabs-nav li .ui-icon-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-tabs-bottom .ui-tabs-nav li .ui-icon-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%; margin-top: 10px !important;}
             .ui-tabs-bottom .ui-tabs-nav li.ui-state-hover .ui-icon-close,
-            .ui-tabs-bottom .ui-tabs-nav li.ui-state-active .ui-icon-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete-red.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-tabs-bottom .ui-tabs-nav li.ui-state-active .ui-icon-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete-red.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%; margin-top: 10px !important;}
         .ui-tabs-bottom .ui-tabs-nav li a{color:#FBFCFD !important; font-size: 15px;}
         .ui-tabs-bottom .ui-tabs-nav li.ui-tabs-selected,
@@ -1214,28 +1214,28 @@ hr.ui-widget-header{background-color: #E5EBF0; border-width:0px;}
               border-top-left-radius: 3px;   border-top-right-radius: 3px;}
         .ui-dialog .ui-dialog-title{margin:5px 16px 5px 0px !important;}
         .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon{padding:0px; margin-top: 6px;}
-        .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon .ui-icon-closethick{background-image:url("/shrimpweb/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon .ui-icon-closethick{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
-        .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon .ui-icon-minus{background-image:url("/shrimpweb/javax.faces.resource/images/minus-sign-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon .ui-icon-minus{background-image:url("/tesisControlGasolina/javax.faces.resource/images/minus-sign-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
-        .ui-dialog-docking-zone .ui-icon-plus{background-image:url("/shrimpweb/javax.faces.resource/images/plus-sign-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-dialog-docking-zone .ui-icon-plus{background-image:url("/tesisControlGasolina/javax.faces.resource/images/plus-sign-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 90%;}
-        .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon .ui-icon-extlink{background-image:url("/shrimpweb/javax.faces.resource/images/external-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon .ui-icon-extlink{background-image:url("/tesisControlGasolina/javax.faces.resource/images/external-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
-        .ui-dialog .ui-dialog-titlebar .ui-icon-newwin{background-image:url("/shrimpweb/javax.faces.resource/images/external-gray-revert.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-dialog .ui-dialog-titlebar .ui-icon-newwin{background-image:url("/tesisControlGasolina/javax.faces.resource/images/external-gray-revert.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
     .ui-confirm-dialog .ui-dialog-content .ui-confirm-dialog-message{color:#D76666;}
     .ui-dialog .ui-dialog-content{padding:20px !important; color:#003D50; font-size: 16px;}
-        .ui-dialog .ui-dialog-content .ui-icon-alert{background-image:url("/shrimpweb/javax.faces.resource/images/warn-red.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-dialog .ui-dialog-content .ui-icon-alert{background-image:url("/tesisControlGasolina/javax.faces.resource/images/warn-red.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 140%; margin: 4px 10px 0px 0px;}
         .ui-dialog .ui-dialog-content .ui-confirm-dialog-message{margin:0px;}
     .ui-dialog .ui-dialog-footer{padding: 10px 20px !important; border-top: solid 1px #E8EDF2 !important; background-color: #F3F5F7; margin:0px !important; text-align: right !important;}
-    .ui-dialog .ui-resizable-se{background-image:url("/shrimpweb/javax.faces.resource/images/handle-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-dialog .ui-resizable-se{background-image:url("/tesisControlGasolina/javax.faces.resource/images/handle-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
     
 .ui-overlaypanel{color: #778D9B;}
     .ui-overlaypanel .ui-overlaypanel-close{background-color: #003D50;}
-        .ui-overlaypanel .ui-overlaypanel-close .ui-icon-closethick{background-image:url("/shrimpweb/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-overlaypanel .ui-overlaypanel-close .ui-icon-closethick{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 90%; width: 20px; height: 20px;}
     .ui-overlaypanel .ui-overlaypanel-content{background-color: #FBFCFD; padding: 20px !important; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;}
     
@@ -1243,17 +1243,17 @@ hr.ui-widget-header{background-color: #E5EBF0; border-width:0px;}
     .ui-lightbox .ui-lightbox-content-wrapper{ }
         .ui-lightbox .ui-lightbox-content-wrapper .ui-lightbox-nav-left{left:5px;}
         .ui-lightbox .ui-lightbox-content-wrapper .ui-lightbox-nav-right{right:5px;}
-            .ui-lightbox .ui-lightbox-content-wrapper .ui-lightbox-nav-left .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-lightbox .ui-lightbox-content-wrapper .ui-lightbox-nav-left .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 130%; width: 40px; height: 40px; opacity: 0.6; filter: alpha(opacity=60);}
             .ui-lightbox .ui-lightbox-content-wrapper .ui-lightbox-nav-left .ui-icon:hover{opacity: 1; filter: alpha(opacity=100);}
-            .ui-lightbox .ui-lightbox-content-wrapper .ui-lightbox-nav-right .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-lightbox .ui-lightbox-content-wrapper .ui-lightbox-nav-right .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 130%; width: 40px; height: 40px; opacity: 0.6; filter: alpha(opacity=60);}
             .ui-lightbox .ui-lightbox-content-wrapper .ui-lightbox-nav-right .ui-icon:hover{opacity: 1; filter: alpha(opacity=100);}
         .ui-lightbox .ui-lightbox-content-wrapper .ui-lightbox-content{}
     .ui-lightbox .ui-lightbox-caption{padding: 5px 20px 10px 20px !important; border-top: solid 1px #E8EDF2 !important; background-color: #F3F5F7; margin:10px -10px -10px -10px !important; color: #778D9B;
     border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;}
         .ui-lightbox .ui-lightbox-caption .ui-lightbox-close{ padding: 0px; margin-top: 8px;}
-        .ui-lightbox .ui-lightbox-caption .ui-lightbox-close .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-lightbox .ui-lightbox-caption .ui-lightbox-close .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
         
         .ui-dialog-docking-zone{z-index: 999999999999999;}
@@ -1269,9 +1269,9 @@ hr.ui-widget-header{background-color: #E5EBF0; border-width:0px;}
                     border-bottom-right-radius:30px; border-bottom-left-radius:30px; border-top-right-radius:30px; border-top-left-radius:30px;
                     -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
 .ui-fieldset-legend.ui-state-hover{background-color:#005974;}
-.ui-fieldset-legend .ui-icon-plusthick{background-image:url("/shrimpweb/javax.faces.resource/images/plus-sign.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+.ui-fieldset-legend .ui-icon-plusthick{background-image:url("/tesisControlGasolina/javax.faces.resource/images/plus-sign.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 90%; margin-right: 5px; margin-top: 0px !important;}
-.ui-fieldset-legend .ui-icon-minusthick{background-image:url("/shrimpweb/javax.faces.resource/images/minus-sign.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+.ui-fieldset-legend .ui-icon-minusthick{background-image:url("/tesisControlGasolina/javax.faces.resource/images/minus-sign.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 90%; margin-right: 5px; margin-top: 0px !important;}
 
 .ui-fieldset-content{font-size: 15px; color:#003D50;}
@@ -1324,7 +1324,7 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
 .ui-splitbutton .ui-button{margin-right:0px !important;}
 .ui-splitbutton>.ui-button-text-icon-left .ui-button-text{border-bottom-right-radius:0px !important; border-top-right-radius:0px !important;}
 .ui-splitbutton .ui-splitbutton-menubutton .ui-button-text{padding: 7px 2px !important; border-bottom-left-radius:0px !important; border-top-left-radius:0px !important;}
-.ui-splitbutton .ui-splitbutton-menubutton .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/menu-dots.svg.jsf?ln=primefaces-ronin") !important; background-size: 100%; background-position: center;}
+.ui-splitbutton .ui-splitbutton-menubutton .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/menu-dots.svg.jsf?ln=primefaces-ronin") !important; background-size: 100%; background-position: center;}
 .ui-splitbutton .ui-button{border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
 .ui-splitbutton-menubutton{margin-left:1px !important;}
 
@@ -1350,9 +1350,9 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
     .ui-menu .ui-menu-list .ui-widget-header{font-size:16px; color:#003D50; background-color: #e5ebf0; width:100% !important; border-radius: 2px; font-family:'dosisregular';}
     .ui-menu .ui-menu-list .ui-widget-header:hover{color:#003D50; background-color:#c6d6df;}
         .ui-menu.ui-menu-toggleable li.ui-widget-header h3{padding-left:26px !important;}
-    .ui-menu .ui-menu-list .ui-widget-header .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-menu .ui-menu-list .ui-widget-header .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
-    .ui-menu .ui-menu-list .ui-widget-header .ui-icon-triangle-1-e{background-image:url("/shrimpweb/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+    .ui-menu .ui-menu-list .ui-widget-header .ui-icon-triangle-1-e{background-image:url("/tesisControlGasolina/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
     
     .ui-menu .ui-menu-list .ui-menuitem{font-size:14px; display: table;}
@@ -1363,16 +1363,16 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
     .ui-menu .ui-state-hover .ui-menuitem-link{color:#CE2246 !important;}
     .ui-menu .ui-menuitem .ui-menuitem-link{color:#003D50; font-family: 'dosismedium'; font-size: 14px;}
     .ui-menu.ui-menu-toggleable .ui-menuitem .ui-menuitem-link{padding: 4px 1% 4px 5% !important; width: 93% !important;}
-        .ui-menu .ui-menuitem .ui-menuitem-link .ui-icon-triangle-1-e{background-image:url("/shrimpweb/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-menu .ui-menuitem .ui-menuitem-link .ui-icon-triangle-1-e{background-image:url("/tesisControlGasolina/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
-        .ui-menu .ui-menuitem .ui-menuitem-link .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+        .ui-menu .ui-menuitem .ui-menuitem-link .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 100%;}
     .ui-menu .ui-menuitem .ui-menuitem-link .ui-icon{margin-right:5px;}
         .ui-menu .ui-menuitem .ui-menu-list{background-color: #FBFCFD;}
         .ui-slidemenu .ui-menuitem .ui-menu-child{box-shadow:none !important;}
     .ui-menu .ui-slidemenu-wrapper .ui-slidemenu-backward{background-color:#eff3f5; left: 2px; color:#778D9B; padding: 3px 3px 4px 3px; font-size: 14px;}
     .ui-menu .ui-slidemenu-wrapper .ui-slidemenu-backward:hover{color:#CE2246;}
-        .ui-menu .ui-slidemenu-wrapper .ui-slidemenu-backward .ui-icon-triangle-1-w{background-image:url("/shrimpweb/javax.faces.resource/images/leftarrow-gray.svg.jsf?ln=primefaces-ronin"); margin: 2px 5px 0px 0px;
+        .ui-menu .ui-slidemenu-wrapper .ui-slidemenu-backward .ui-icon-triangle-1-w{background-image:url("/tesisControlGasolina/javax.faces.resource/images/leftarrow-gray.svg.jsf?ln=primefaces-ronin"); margin: 2px 5px 0px 0px;
                                                                                     background-position: center !important; background-repeat: no-repeat; background-size: 85%;}
         
     .ui-panelmenu{border:solid 1px #C6D6DF; background-color: #FBFCFD; color: #778D9B; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; padding: 2px;}
@@ -1380,18 +1380,18 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
         .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header{border-radius:2px !important; -webkit-border-radius:2px !important; -moz-border-radius:2px !important; color:#F1F6F9;
                                                                font-size: 14px; font-weight: normal; margin-bottom: 1px !important; background-color:#003D50;}
         .ui-panelmenu .ui-panelmenu-panel h3.ui-state-hover{background-color:#005974;}
-            .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header .ui-icon-triangle-1-e{background-image:url("/shrimpweb/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header .ui-icon-triangle-1-e{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 105%;}
-            .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 110%;}
             .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header a{padding: 5px 5px 6px 30px;}
         
         .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem:hover{background-color:#f1f4f7;}
         .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-state-hover{color:#CE2246;}
             .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem a{color:#003D50; font-size: 14px; font-family: 'dosismedium';}
-            .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem-link .ui-icon-triangle-1-e{background-image:url("/shrimpweb/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem-link .ui-icon-triangle-1-e{background-image:url("/tesisControlGasolina/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 90%;}
-            .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem-link .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
+            .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem-link .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow-navy.svg.jsf?ln=primefaces-ronin"); background-position: center !important; 
                          background-repeat: no-repeat; background-size: 90%;}
             
 .ui-tabmenu{border:solid 1px #C6D6DF; background-color: #FBFCFD; color: #778D9B; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; padding:2px 2px 0px 2px;}
@@ -1427,7 +1427,7 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
 .ui-messages-warn .ui-icon-close,
 .ui-messages-error .ui-icon-close,
 .ui-messages-fatal .ui-icon-close {
-  background-image: url("/shrimpweb/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin") !important;
+  background-image: url("/tesisControlGasolina/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin") !important;
   background-size: 110%;
   background-position: center;
 }
@@ -1473,33 +1473,33 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
   background-size: 100%  !important;
 }
 .ui-message-error-icon {
-  background-image: url("/shrimpweb/javax.faces.resource/images/warn-pink.svg.jsf?ln=primefaces-ronin") !important;
+  background-image: url("/tesisControlGasolina/javax.faces.resource/images/warn-pink.svg.jsf?ln=primefaces-ronin") !important;
   background-position: top !important;
   background-size: 120% !important;
 }
 .ui-messages-error-icon {
-  background-image: url("/shrimpweb/javax.faces.resource/images/warn-pink.svg.jsf?ln=primefaces-ronin") !important;
+  background-image: url("/tesisControlGasolina/javax.faces.resource/images/warn-pink.svg.jsf?ln=primefaces-ronin") !important;
   background-position: top !important;
   background-size: 90% !important;
   width: 40px !important;
   height: 40px !important;
 }
 .ui-messages-info-icon {
-  background-image: url("/shrimpweb/javax.faces.resource/images/warn-blue.svg.jsf?ln=primefaces-ronin") !important;
+  background-image: url("/tesisControlGasolina/javax.faces.resource/images/warn-blue.svg.jsf?ln=primefaces-ronin") !important;
   background-position: top !important;
   background-size: 90% !important;
   width: 40px !important;
   height: 40px !important;
 }
 .ui-messages-warn-icon {
-  background-image: url("/shrimpweb/javax.faces.resource/images/warn-hardal.svg.jsf?ln=primefaces-ronin") !important;
+  background-image: url("/tesisControlGasolina/javax.faces.resource/images/warn-hardal.svg.jsf?ln=primefaces-ronin") !important;
   background-position: top !important;
   background-size: 90% !important;
   width: 40px !important;
   height: 40px !important;
 }
 .ui-messages-fatal-icon {
-  background-image: url("/shrimpweb/javax.faces.resource/images/warn-red.svg.jsf?ln=primefaces-ronin") !important;
+  background-image: url("/tesisControlGasolina/javax.faces.resource/images/warn-red.svg.jsf?ln=primefaces-ronin") !important;
   background-position: top !important;
   background-size: 90% !important;
   width: 40px !important;
@@ -1522,13 +1522,13 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
         .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon,
         .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon:hover,
         .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon:focus{margin-top:0px;}
-             .ui-panel .ui-panel-titlebar .ui-icon-closethick{background-image:url("/shrimpweb/javax.faces.resource/images/delete-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
+             .ui-panel .ui-panel-titlebar .ui-icon-closethick{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
                                 background-size: 110% !important;}
-             .ui-panel .ui-panel-titlebar .ui-icon-minusthick{background-image:url("/shrimpweb/javax.faces.resource/images/minus-sign-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
+             .ui-panel .ui-panel-titlebar .ui-icon-minusthick{background-image:url("/tesisControlGasolina/javax.faces.resource/images/minus-sign-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
                                 background-size: 110% !important;}
-             .ui-panel .ui-panel-titlebar .ui-icon-plusthick{background-image:url("/shrimpweb/javax.faces.resource/images/plus-sign-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
+             .ui-panel .ui-panel-titlebar .ui-icon-plusthick{background-image:url("/tesisControlGasolina/javax.faces.resource/images/plus-sign-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
                                 background-size: 110% !important;}
-             .ui-panel .ui-panel-titlebar .ui-icon-gear{background-image:url("/shrimpweb/javax.faces.resource/images/gear-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
+             .ui-panel .ui-panel-titlebar .ui-icon-gear{background-image:url("/tesisControlGasolina/javax.faces.resource/images/gear-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
                                 background-size: 140% !important;}
     .ui-panel .ui-panel-content{padding:5px !important; font-size: 15px; color:#003D50; font-family: 'dosismedium';}
     .ui-panel .ui-panel-footer{border-top: solid 1px #E8EDF2 !important; background-color:#F6FAFC; margin: 0px -2px -2px -2px !important; font-size: 14px;
@@ -1562,12 +1562,12 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
 .ui-selectonemenu-panel .ui-state-highlight, .ui-selectcheckboxmenu-panel .ui-state-highlight{ color: #fff !important; background-color: #CE2246;}
 .ui-selectonemenu-panel .ui-selectonemenu-item.ui-state-hover{background-color: #c6d6df; -webkit-transition: all 0.5s ease;
 										-moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
-	.ui-selectonemenu-trigger .ui-icon-triangle-1-s, .ui-selectcheckboxmenu-trigger .ui-icon-triangle-1-s{ background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin") !important; margin-top:9px;
+	.ui-selectonemenu-trigger .ui-icon-triangle-1-s, .ui-selectcheckboxmenu-trigger .ui-icon-triangle-1-s{ background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin") !important; margin-top:9px;
                               background-size: 100%; background-position: center;}
  
  .ui-selectonemenu-panel{background-color: #F1F4F7;}
  .ui-selectonemenu-panel .ui-selectonemenu-filter-container .ui-icon-search{width: 30px; height: 30px; background-size: 100%; background-position: center; background-repeat: no-repeat;
-                                                                            background-image: url("/shrimpweb/javax.faces.resource/images/search-icon.svg.jsf?ln=primefaces-ronin"); 
+                                                                            background-image: url("/tesisControlGasolina/javax.faces.resource/images/search-icon.svg.jsf?ln=primefaces-ronin"); 
                                                                             left: 5px !important; top:8px !important;}
  .ui-selectonemenu-panel .ui-selectonemenu-filter-container .ui-inputfield{padding-left:30px !important; width:75%;}
  .ui-selectonemenu-panel .ui-selectonemenu-table td{border: solid 1px #E5EAF0 !important; border-radius: 0px !important; -webkit-border-radius: 0px !important; font-size: 14px; 
@@ -1592,11 +1592,11 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
     .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-filter-container{width:80%;}
         .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-filter-container .ui-inputfield{width:75%; padding-left: 30px !important;}
         .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-filter-container .ui-icon-search{width:30px; height:30px; background-size: 100%; background-position: center; background-repeat: no-repeat;
-                        background-image:url("/shrimpweb/javax.faces.resource/images/search-icon.svg.jsf?ln=primefaces-ronin"); left:0px;}
+                        background-image:url("/tesisControlGasolina/javax.faces.resource/images/search-icon.svg.jsf?ln=primefaces-ronin"); left:0px;}
         .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-header .ui-chkbox{ margin-top: 5px !important;}
         .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-checked{ background-color: #C6D6DF;}
         .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-close{padding:0px !important; margin-right: -2px !important; margin-top: -7px;}
-        .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-close .ui-icon-circle-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin") !important;
+        .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-close .ui-icon-circle-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin") !important;
                              background-size:90%; background-position: center;}
                        
 
@@ -1611,24 +1611,24 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
 .ui-log:hover, .ui-log:focus{}
 	.ui-log-header{padding:10px !important; font-size: 16px !important; color:#ffffff; position:relative; z-index:100;
 					border-radius:2px !important; -webkit-border-radius:2px !important; -moz-border-radius:2px !important; background-color:#003D50;}
-        .ui-log-header .ui-log-clear .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/clear.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
+        .ui-log-header .ui-log-clear .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/clear.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
         
-        .ui-log-header .ui-log-all .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/all-doc.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
+        .ui-log-header .ui-log-all .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/all-doc.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
         
-        .ui-log-header .ui-log-info .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/info.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
-        .ui-log-item-info .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/info-gray.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;
+        .ui-log-header .ui-log-info .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/info.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
+        .ui-log-item-info .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/info-gray.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;
         width:20px; height: 20px;}
         
-        .ui-log-header .ui-log-warn .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/warn.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
-        .ui-log-item-warn .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/warn-gray.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;
+        .ui-log-header .ui-log-warn .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/warn.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
+        .ui-log-item-warn .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/warn-gray.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;
         width:20px; height: 20px;}
         
-        .ui-log-header .ui-log-debug .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/debug.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
-        .ui-log-item-debug .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/debug-gray.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%; 
+        .ui-log-header .ui-log-debug .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/debug.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
+        .ui-log-item-debug .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/debug-gray.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%; 
                 width:20px; height: 20px;}
         
-        .ui-log-header .ui-log-error .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/error.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
-        .ui-log-item-error .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/error-gray.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;
+        .ui-log-header .ui-log-error .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/error.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;}
+        .ui-log-item-error .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/error-gray.svg.jsf?ln=primefaces-ronin") !important; background-position:center !important; background-size:140%;
         width:20px; height: 20px;}
         
 	.ui-log-button{top:initial !important; left:initial !important; position:relative !important; display:inline-block !important; padding:0px !important; margin-right:5px;}
@@ -1644,7 +1644,7 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
         .ui-chkbox .ui-state-focus{outline:dotted 1px #778D9B; outline-offset:2px;}
             .ui-chkbox-box .ui-icon-blank{background-image:none !important; background-size: 100%; background-position: center;
                                          -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
-            .ui-chkbox-box .ui-icon-check{border-radius: 0px; background-image:url("/shrimpweb/javax.faces.resource/images/check.svg.jsf?ln=primefaces-ronin") !important; background-size: 100%; 
+            .ui-chkbox-box .ui-icon-check{border-radius: 0px; background-image:url("/tesisControlGasolina/javax.faces.resource/images/check.svg.jsf?ln=primefaces-ronin") !important; background-size: 100%; 
                                           background-position: center; background-color:#003D50;
                                           -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
             .ui-chkbox .ui-chkbox-label{margin:1px 15px 0px 5px !important; font-size: 16px; color:#003D50;}
@@ -1661,7 +1661,7 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
                                      -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;
                                     background-image:none !important;}
 .ui-radiobutton .ui-state-active .ui-icon-bullet, 
-.ui-radiobutton .ui-state-focus .ui-icon-bullet {background-image:url("/shrimpweb/javax.faces.resource/images/radio-on.svg.jsf?ln=primefaces-ronin") !important; background-size: 100%; background-position: center; margin: 0px;
+.ui-radiobutton .ui-state-focus .ui-icon-bullet {background-image:url("/tesisControlGasolina/javax.faces.resource/images/radio-on.svg.jsf?ln=primefaces-ronin") !important; background-size: 100%; background-position: center; margin: 0px;
                                                  background-color:#003D50; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%;
                                                 -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
             
@@ -1683,7 +1683,7 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
 /*Style For Password Panel --------------------------------------------------------------------------------------*/  
 
 .ui-password-panel{font-size: 14px; color: #778D9B; padding: 10px !important; background-color:#EDF3F6 !important; font-family:'dosismedium'; border-radius: 3px;}
-    .ui-password-panel .ui-password-meter{background-image:url("/shrimpweb/javax.faces.resource/images/password-meter.svg.jsf?ln=primefaces-ronin") !important; background-size: 100% !important;}
+    .ui-password-panel .ui-password-meter{background-image:url("/tesisControlGasolina/javax.faces.resource/images/password-meter.svg.jsf?ln=primefaces-ronin") !important; background-size: 100% !important;}
 
 
 /*Style For Input Switch --------------------------------------------------------------------------------------*/ 
@@ -1712,7 +1712,7 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
     .ui-selectonelistbox .ui-selectlistbox-item.ui-state-highlight td{color: #F6FAFC !important;}
     
 .ui-selectonelistbox .ui-selectlistbox-filter-container .ui-icon-search{width: 30px; height: 30px; background-size: 100%; background-position: center; background-repeat: no-repeat;
-                                                                        background-image: url("/shrimpweb/javax.faces.resource/images/search-icon.svg.jsf?ln=primefaces-ronin"); left: 0px; top: 2px;}
+                                                                        background-image: url("/tesisControlGasolina/javax.faces.resource/images/search-icon.svg.jsf?ln=primefaces-ronin"); left: 0px; top: 2px;}
 .ui-selectonelistbox .ui-selectlistbox-filter-container .ui-inputfield{padding-left:30px !important; width: 70%;}
     
     
@@ -1721,7 +1721,7 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
 .ui-selectmanymenu{background-color: #FBFCFD; color:#003D50; padding:5px !important; font-family:'dosismedium'; border-radius:4px !important;}
 .ui-selectmanymenu:hover{}
     .ui-selectmanymenu .ui-selectlistbox-filter-container .ui-icon-search{width:30px; height:30px; background-size: 100%; background-position: center; background-repeat: no-repeat;
-                        background-image:url("/shrimpweb/javax.faces.resource/images/search-icon.svg.jsf?ln=primefaces-ronin"); left:0px; top:2px;}
+                        background-image:url("/tesisControlGasolina/javax.faces.resource/images/search-icon.svg.jsf?ln=primefaces-ronin"); left:0px; top:2px;}
     .ui-selectmanymenu .ui-selectlistbox-filter-container .ui-inputfield{width:70%; padding-left: 30px !important;}
     .ui-selectmanymenu .ui-selectlistbox-item{padding: 4px 5px 6px 5px;}
     .ui-selectmanymenu .ui-selectlistbox-item.ui-state-hover td{color:#CE2246;}
@@ -1745,11 +1745,11 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
 
 /*Style For SelectManyMenu --------------------------------------------------------------------------------------*/
 
-.ui-rating-cancel a{background-image:url("/shrimpweb/javax.faces.resource/images/dislike-on.svg.jsf?ln=primefaces-ronin") !important; opacity:1; background-position: center !important; background-size:100% !important;
+.ui-rating-cancel a{background-image:url("/tesisControlGasolina/javax.faces.resource/images/dislike-on.svg.jsf?ln=primefaces-ronin") !important; opacity:1; background-position: center !important; background-size:100% !important;
                    margin-right: 3px; width:16px !important; height: 16px !important; color: #778D9B;}
-.ui-rating-cancel-hover a{background-image:url("/shrimpweb/javax.faces.resource/images/dislike-on.svg.jsf?ln=primefaces-ronin") !important; opacity:0.5; background-position: center !important; background-size:100% !important;}
-.ui-rating-star a{background-image:url("/shrimpweb/javax.faces.resource/images/star.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important; background-size:100% !important; margin:0px 1px;}
-.ui-rating-star-on a{background-image:url("/shrimpweb/javax.faces.resource/images/star-on.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important; background-size:100% !important;}
+.ui-rating-cancel-hover a{background-image:url("/tesisControlGasolina/javax.faces.resource/images/dislike-on.svg.jsf?ln=primefaces-ronin") !important; opacity:0.5; background-position: center !important; background-size:100% !important;}
+.ui-rating-star a{background-image:url("/tesisControlGasolina/javax.faces.resource/images/star.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important; background-size:100% !important; margin:0px 1px;}
+.ui-rating-star-on a{background-image:url("/tesisControlGasolina/javax.faces.resource/images/star-on.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important; background-size:100% !important;}
 
 
 /*Style For Spinner --------------------------------------------------------------------------------------*/
@@ -1763,9 +1763,9 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
 .ui-spinner .ui-spinner-down .ui-button-text{margin-top:1px;
         border-bottom-right-radius:30px !important; border-bottom-left-radius:0px !important; border-top-right-radius:0px !important; border-top-left-radius:0px !important;}
 .ui-spinner .ui-spinner-button .ui-button-text{height:5px; text-align: center; padding: 3px 20px 4px 20px !important;}
-.ui-spinner .ui-spinner-up .ui-button-text .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/plus-sign.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
+.ui-spinner .ui-spinner-up .ui-button-text .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/plus-sign.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
         background-size:80% !important; margin-left:12px; margin-top:-8px;}
-.ui-spinner .ui-spinner-down .ui-button-text .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/minus-sign.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
+.ui-spinner .ui-spinner-down .ui-button-text .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/minus-sign.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
         background-size:80% !important; margin-left:12px;}
 
 
@@ -1778,9 +1778,9 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
     .ui-datepicker-header .ui-datepicker-next{right:3px !important; top:3px !important; cursor:pointer; background-color:#CE2246; border-radius: 30px; -webkit-border-radius: 30px; -moz-border-radius: 30px;}
     .ui-datepicker-header .ui-datepicker-prev-hover{background-color:#e82850; left:3px; top:3px;}
     .ui-datepicker-header .ui-datepicker-next-hover{background-color:#e82850; right:3px; top:3px;}
-    .ui-datepicker-header .ui-datepicker-prev .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
+    .ui-datepicker-header .ui-datepicker-prev .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
         background-size:100% !important; top:50%; left:48%;}
-    .ui-datepicker-header .ui-datepicker-next .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
+    .ui-datepicker-header .ui-datepicker-next .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
         background-size:100% !important; top:50%; left:51%;}
     
     .ui-datepicker-calendar{margin:2px 0px 0px 0px !important; border-collapse:inherit !important;}
@@ -1799,7 +1799,7 @@ border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px;}
         .ui-datepicker-calendar tbody tr .ui-datepicker-current-day a{/*color:#F6FAFC !important;*/}
     
     .ui-datepicker-trigger{width:auto !important; margin-left:2px !important;}
-    .ui-datepicker-trigger .ui-icon{background-image:url("/shrimpweb/javax.faces.resource/images/calendar.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
+    .ui-datepicker-trigger .ui-icon{background-image:url("/tesisControlGasolina/javax.faces.resource/images/calendar.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
         background-size:145% !important;}
     
     .ui-datepicker-group .ui-datepicker-calendar{width:100% !important;}
@@ -1843,9 +1843,9 @@ font-family: 'dosismedium';}
 .ui-galleria-filmstrip-wrapper{border-top: solid 1px #E8EDF2 !important; background-color: #F3F5F7;}
     .ui-galleria-nav-prev, .ui-galleria-nav-next{padding: 2px; bottom: 14px !important;}
     .ui-galleria-nav-prev:hover, .ui-galleria-nav-next:hover{}
-    .ui-galleria-nav-prev{left:2px !important; background-image:url("/shrimpweb/javax.faces.resource/images/leftarrow-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
+    .ui-galleria-nav-prev{left:2px !important; background-image:url("/tesisControlGasolina/javax.faces.resource/images/leftarrow-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
         background-size:100% !important;}
-    .ui-galleria-nav-next{right:2px !important; background-image:url("/shrimpweb/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
+    .ui-galleria-nav-next{right:2px !important; background-image:url("/tesisControlGasolina/javax.faces.resource/images/rightarrow-navy.svg.jsf?ln=primefaces-ronin") !important; background-position: center !important;
         background-size:120% !important;}
     .ui-galleria-caption{background-color:rgba(0,61,80,0.5) !important;}
     
@@ -1871,7 +1871,7 @@ font-family: 'dosismedium';}
                    border-bottom-left-radius:0px  !important; border-top-left-radius:0px  !important;}
     .ui-autocomplete .ui-corner-left{border-bottom-right-radius:0px !important; border-top-right-radius:0px !important;
                           border-bottom-left-radius:30px !important; border-top-left-radius:30px !important;}
-.ui-autocomplete .ui-autocomplete-dropdown .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
+.ui-autocomplete .ui-autocomplete-dropdown .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin"); background-position: center !important;
         background-size:100% !important; z-index:999;}
 .ui-autocomplete-panel{background-color: #F1F4F7;}
     .ui-autocomplete-panel .ui-autocomplete-items{padding:0px !important;}
@@ -1884,7 +1884,7 @@ font-family: 'dosismedium';}
 .ui-autocomplete-panel .ui-autocomplete-table th, .ui-autocomplete-panel .ui-autocomplete-table td{ border-color: #E5EAF0 !important;}
 
 .ui-autocomplete-multiple .ui-autocomplete-multiple-container .ui-autocomplete-token{background-color:#C6D6DF; padding: 5px;}
-.ui-autocomplete-multiple .ui-autocomplete-multiple-container .ui-autocomplete-token .ui-icon-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin") !important;
+.ui-autocomplete-multiple .ui-autocomplete-multiple-container .ui-autocomplete-token .ui-icon-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete-gray.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:100% !important;}
     .ui-autocomplete-input-token input[type="text"]{color:#003D50; font-size: 14px; font-family: 'dosismedium' !important;}
     
@@ -1912,7 +1912,7 @@ font-family: 'dosismedium';}
 
 /* Style For UI MenuButton --------------------------------------------------------------------------------------*/
 
-.ui-menubutton .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin") !important;
+.ui-menubutton .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:120% !important;}
 
 /* Style For Toolbar Seperator --------------------------------------------------------------------------------------*/
@@ -1954,15 +1954,15 @@ div.jqplot-table-legend-swatch
 .ui-fileupload-choose input[type="file"],
 .ui-fileupload-simple input[type="file"]{z-index:999;}
 .ui-fileupload-choose .ui-icon-plusthick,
-.ui-fileupload-simple .ui-icon-plusthick{background-image:url("/shrimpweb/javax.faces.resource/images/plus-sign.svg.jsf?ln=primefaces-ronin") !important;
+.ui-fileupload-simple .ui-icon-plusthick{background-image:url("/tesisControlGasolina/javax.faces.resource/images/plus-sign.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:100% !important;}
-.ui-fileupload-upload .ui-icon-arrowreturnthick-1-n{background-image:url("/shrimpweb/javax.faces.resource/images/upload.svg.jsf?ln=primefaces-ronin") !important;
+.ui-fileupload-upload .ui-icon-arrowreturnthick-1-n{background-image:url("/tesisControlGasolina/javax.faces.resource/images/upload.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:100% !important;}
-.ui-fileupload-cancel .ui-icon-cancel{background-image:url("/shrimpweb/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin") !important;
+.ui-fileupload-cancel .ui-icon-cancel{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:100% !important;}
-.ui-fileupload-content .ui-fileupload-cancel .ui-icon-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin") !important;
+.ui-fileupload-content .ui-fileupload-cancel .ui-icon-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:100% !important;}
-.ui-fileupload-content .ui-messages-error .ui-icon-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete-pink.svg.jsf?ln=primefaces-ronin") !important;
+.ui-fileupload-content .ui-messages-error .ui-icon-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete-pink.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:100% !important;}
 .ui-fileupload-simple .ui-fileupload-filename{color:#003D50;}
 
@@ -1986,9 +1986,9 @@ color: #fff; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius:
 
 /*Style For UI Inplace --------------------------------------------------------------------------------------*/
 
-.ui-inplace .ui-inplace-editor .ui-button .ui-icon-check{background-image:url("/shrimpweb/javax.faces.resource/images/check-white.svg.jsf?ln=primefaces-ronin") !important;
+.ui-inplace .ui-inplace-editor .ui-button .ui-icon-check{background-image:url("/tesisControlGasolina/javax.faces.resource/images/check-white.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:110% !important;}
-.ui-inplace .ui-inplace-editor .ui-button .ui-icon-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin") !important;
+.ui-inplace .ui-inplace-editor .ui-button .ui-icon-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:110% !important;}
 .ui-inplace .ui-inplace-display.ui-state-highlight{background-color: #F3F5F7; padding: 3px; border: solid 1px #D1D3D4 !important; border-radius: 3px;}
 
@@ -2011,17 +2011,17 @@ color: #fff; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius:
 .ui-layout-unit .ui-layout-unit-header{color: #fff; padding: 8px 6px 10px 10px !important; font-size: 14px; font-family:'dosismedium'; background-color:#003D50; border-radius:2px;}
     .ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-title{font-family:'dosismedium';}
 
-.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-icon .ui-icon-close{background-image:url("/shrimpweb/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin") !important;
+.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-icon .ui-icon-close{background-image:url("/tesisControlGasolina/javax.faces.resource/images/delete.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:110% !important; margin-top: 3px;}
-.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-icon .ui-icon-triangle-1-n{background-image:url("/shrimpweb/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin") !important;
+.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-icon .ui-icon-triangle-1-n{background-image:url("/tesisControlGasolina/javax.faces.resource/images/uparrow.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:120% !important; margin-top: 3px;}
-.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-icon .ui-icon-triangle-1-w{background-image:url("/shrimpweb/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin") !important;
+.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-icon .ui-icon-triangle-1-w{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:100% !important; margin-top: 3px;}
-.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-icon .ui-icon-triangle-1-e{background-image:url("/shrimpweb/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin") !important;
+.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-icon .ui-icon-triangle-1-e{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:100% !important; margin-top: 3px;}
-.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-icon .ui-icon-triangle-1-s{background-image:url("/shrimpweb/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin") !important;
+.ui-layout-unit .ui-layout-unit-header .ui-layout-unit-header-icon .ui-icon-triangle-1-s{background-image:url("/tesisControlGasolina/javax.faces.resource/images/downarrow.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:120% !important; margin-top: 3px;}
-.ui-layout-resizer .ui-layout-toggler .ui-icon-arrow-4-diag{background-image:url("/shrimpweb/javax.faces.resource/images/expand-gray.svg.jsf?ln=primefaces-ronin") !important;
+.ui-layout-resizer .ui-layout-toggler .ui-icon-arrow-4-diag{background-image:url("/tesisControlGasolina/javax.faces.resource/images/expand-gray.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:110% !important;}
 
 /*Style For UI Wizard --------------------------------------------------------------------------------------*/
@@ -2030,9 +2030,9 @@ color: #fff; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius:
 .ui-wizard .ui-wizard-step-titles li{padding: 6px 20px !important; font-size: 14px; color: #ffffff; font-family:'dosismedium';
 border-radius: 3px !important; -webkit-border-radius: 3px !important; -moz-border-radius: 3px !important; background-color:#517681;}
 .ui-wizard .ui-wizard-step-titles li.ui-state-highlight{background-color:#003D50;}
-.ui-wizard .ui-wizard-nav-back .ui-icon-arrowthick-1-w{background-image:url("/shrimpweb/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin") !important;
+.ui-wizard .ui-wizard-nav-back .ui-icon-arrowthick-1-w{background-image:url("/tesisControlGasolina/javax.faces.resource/images/left-arrow.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:110% !important;}
-.ui-wizard .ui-wizard-nav-next .ui-icon-arrowthick-1-e{background-image:url("/shrimpweb/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin") !important;
+.ui-wizard .ui-wizard-nav-next .ui-icon-arrowthick-1-e{background-image:url("/tesisControlGasolina/javax.faces.resource/images/right-arrow.svg.jsf?ln=primefaces-ronin") !important;
                     background-position: center !important; background-size:110% !important;}
 
 /*Style For UI State Focus --------------------------------------------------------------------------------------*/

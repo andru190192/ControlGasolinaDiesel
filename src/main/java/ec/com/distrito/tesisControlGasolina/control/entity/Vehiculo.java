@@ -22,18 +22,21 @@ public class Vehiculo implements Serializable {
 	private String marca;
 	private String modelo;
 	private String tipo;
+	private String tipoCombustible;
 	private Boolean activo;
 
 	public Vehiculo() {
 	}
 
-	public Vehiculo(Integer id, String placa, String color, String marca, String modelo, String tipo, Boolean activo) {
+	public Vehiculo(Integer id, String placa, String color, String marca, String modelo, String tipo,
+			String tipoCombustible, Boolean activo) {
 		this.id = id;
 		this.placa = placa;
 		this.color = color;
 		this.marca = marca;
 		this.modelo = modelo;
 		this.tipo = tipo;
+		this.tipoCombustible = tipoCombustible;
 		this.activo = activo;
 	}
 
@@ -100,6 +103,11 @@ public class Vehiculo implements Serializable {
 		return this.tipo;
 	}
 
+	@Column(name = "combustible", nullable = false)
+	public String getTipoCombustible() {
+		return tipoCombustible;
+	}
+
 	@Column(nullable = false)
 	public Boolean getActivo() {
 		return this.activo;
@@ -131,6 +139,10 @@ public class Vehiculo implements Serializable {
 
 	public void setActivo(Boolean activo) {
 		this.activo = activo;
+	}
+
+	public void setTipoCombustible(String tipoCombustible) {
+		this.tipoCombustible = tipoCombustible;
 	}
 
 }
