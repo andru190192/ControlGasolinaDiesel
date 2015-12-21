@@ -70,6 +70,9 @@
 					<p:column headerText="Color">
 						<p:outputLabel value="#{vehiculo.color}" />
 					</p:column>
+					<p:column headerText="Km">
+						<p:outputLabel value="#{vehiculo.kilometraje}" />
+					</p:column>
 					<p:column headerText="Tipo Combustible">
 						<p:outputLabel value="#{vehiculo.tipoCombustible}" />
 					</p:column>
@@ -123,6 +126,11 @@
 							<f:selectItem itemLabel="GASOLINA" itemValue="GASOLINA" />
 							<f:selectItem itemLabel="DIESEL" itemValue="DIESEL" />
 						</p:selectOneMenu>
+						<p:outputLabel value="* Km" for="km" styleClass="DispBlock" />
+						<p:inputText id="km" value="#{vehiculoBean.vehiculo.kilometraje}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
+						</p:inputText>
 					</div>
 				</div>
 				<div class="EmptyBox10"></div>
@@ -181,6 +189,10 @@
 							<f:selectItem itemLabel="GASOLINA" itemValue="GASOLINA" />
 							<f:selectItem itemLabel="DIESEL" itemValue="DIESEL" />
 						</p:selectOneMenu>
+						<p:outputLabel value="* Km" for="km" styleClass="DispBlock" />
+						<p:inputText id="km" value="#{vehiculoBean.vehiculo.kilometraje}"
+							onblur="this.value = this.value.toUpperCase()"
+							styleClass="DispBlock Wid90">
 					</div>
 				</div>
 				<div class="EmptyBox10"></div>
